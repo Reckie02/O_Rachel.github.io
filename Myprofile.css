@@ -1,0 +1,148 @@
+body{
+	background-color:#0F0704;
+	font-family: sans;
+	text-align: center;
+	align-content: center;
+
+}
+.sidebar {
+  float: left;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color:#8E6448;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;  
+}
+
+.sidebar a {
+  padding-top: 30px;
+  font-size: 25px;
+  display: block;
+  background-color: #8E6448;
+  transition: 0.3s;
+}
+.sidebar a:hover{
+	color: #414655;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-right: 100px;
+  color: #414655;
+  background-color:#8E6448;
+}
+.closebtn{
+	float: right;
+	padding-top: 0;
+	margin-right: 10px;
+	color: #414655;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:#493022;
+  color: #414655;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #414655;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+div{
+	background-color:#8E6448;
+	text-align: center;
+    align-content: center;
+
+}
+
+.profile{
+	border-radius: 50%;
+}
+
+h1{
+	font-size: 100px;
+	font-weight: bold;
+}
+h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+h5{
+	font-size: 20px;
+}
+img{
+	width: 500px;
+	height: 500px;
+    
+}
+i{
+	font-size: 40px;
+	filter: grayscale(200%);
+}
+.card{
+	background-color: #8E6448;
+	border-radius: 20px;
+	margin-left: 400px;
+	margin-right: 400px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.#Services{
+	background-color: #8E6448;
+	border-radius: 20px;
+
+}
+
+#dgm, #wbs{
+	background-color: #493022;
+	border-radius: 20%;
+	padding: 10px;
+	margin: 30px;
+	height: 300px;
+
+}
+
+.slideshow-container{
+	background:#8E6448;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  
+}
+.mySlides{
+	display: none;
+}
+.prev, .next, .dropbtn {
+	cursor: pointer;
+	top: auto;
+	padding: 16px;
+	color: gray;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.5s ease;
+	border-radius: 0 3px 3px 0;
+}
+button{
+	background-color:#493022 ;
+	width: 200px;
+}
