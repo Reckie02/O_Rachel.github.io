@@ -1,11 +1,12 @@
 body{
-	
 	font-family: sans;
 	text-align: center;
 	align-content: center;
+	overflow-x; hidden;
 
 }
 .sidebar {
+  display:flex;
   float: center;
   height: 100%;
   width: 0;
