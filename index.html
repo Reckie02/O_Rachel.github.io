@@ -62,14 +62,9 @@ function closeNav() {
 		    </div>
 		</div>
 <br><br>
-		<div class="card" id="Contacts">
-			<h2>Contacts</h2>                    
-		<a href="https://www.google.com/gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a><br><br>
-			Phone: 0742381294
-			<br>
-		</div><br>
-
-<!--slideshow-->
+<br>
+<!-- 
+<!--slideshow
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -108,5 +103,39 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+</script> -->
+<div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-6">
+			<h2>Contacts</h2>                    
+		<a href="https://www.google.com/gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a><br><br>
+		</div><br>
+		<div class="col-sm-12 col-md-6 col-lg-6">		
+			<form action="/action_page.php" class="was-validated">
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required> Remember me
+    </label>
+    <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12">
+<label for="comment">Comments:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+ <button type="submit" class="btn btn-primary">Submit</button>
 	</body>
 </html>
