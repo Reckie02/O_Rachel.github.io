@@ -1,152 +1,207 @@
-body{
-	font-family: sans;
-	text-align: center;
-	align-content: center;
-	overflow-x; hidden;
+/*Google Fonts*/
+@import url(https://fonts.googleapis.com/css2)
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.sidebar {
-  display:flex;
-  float: center;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  background-color:#8E6448;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: 0.5s;  
+ul{
+	list-style: none;
 }
 
-.sidebar a {
-  padding-top: 30px;
-  font-size: 25px;
-  display: block;
-  background-color: #8E6448;
-  transition: 0.3s;
+.active{
+	color: skyblue;
+	text-decoration: underline;
+	font-weight: bold;
 }
-.sidebar a:hover{
-	color: #414655;
+body , html{
+	overflow-x: hidden;
 }
-.sidebar {
-  position: absolute;
-  top: 0;
-  font-size: 36px;
-  margin-right: 100px;
-  color: #414655;
-  background-color:#8E6448;
-}
-.closebtn{
-	float: right;
-	padding-top: 0;
-	margin-right: 10px;
-	color: #414655;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color:#493022;
-  color: #414655;
-  padding: 10px 15px;
-  border: none;
-  float: left;
-}
-
-.openbtn:hover {
-  background-color: #414655;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-div{
-	background-color:#8E6448;
-	text-align: center;
-    align-content: center;
-
-}
-
 .profile{
+	max-width: 500px;
+	max-height: 500px;
 	border-radius: 50%;
+	padding-top: 20px;
+	align-self: center;
 }
 
-h1{
-	font-size: 100px;
-	font-weight: bold;
+/*navbar*/
+.navbar {
+	position:absolute ;
+	left: 0;
+	top: 0;
+	display: flex;
+	width: 100%;
+	height: 20px;
+	justify-content: space-between;
+	padding: 20px;
+	color: darkblue;
+   background-color: lightblue;
 }
-h2{
-	font-size: 40px;
-	font-weight: bold;
+
+.nav-links{
+	display: flex;
+	align-items: center;
+
 }
-h5{
-	font-size: 20px;
+
+.nav-links li{
+	margin: 0 30px;
 }
-img{
+a {
+	text-decoration: none;
+}
+.header-content {
+	display: grid;
+	place-items: center;
+	align-items: flex-end;
+	justify-content: center;
+}
+.header-content img{
 	width: 500px;
 	height: 500px;
-    
+	border-radius: 50%;
 }
-i{
-	font-size: 40px;
-	filter: grayscale(200%);
-}
-.card{
-	background-color: #8E6448;
-	border-radius: 20px;
-	margin-left: 400px;
-	margin-right: 400px;
-	padding-bottom: 50px;
-	padding-top: 50px;
-}
-.#Services{
-	background-color: #8E6448;
-	border-radius: 20px;
-
+.header-content {
+	margin-bottom: 150px;
+	color: black;
+	text-align: center;
 }
 
-#dgm, #wbs{
-	background-color: #493022;
-	border-radius: 20%;
-	padding: 10px;
-	margin: 30px;
-	height: 300px;
-
+.line{
+	width: 150px;
+	height: 4px;
+	background: skyblue;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.header-content h1{
+font-size: 7vmin;
+margin-top: 50px;
+margin-bottom: 30px;
+color: black;
 }
 
-.slideshow-container{
-	background:#8E6448;
-  max-width: 100%;
-  max-height: 100%;
-  position: relative;
-  
+.ctn {
+	padding: 8px 15px;
+	background: skyblue;
+	border-radius: 30px;
+	color: whitesmoke;
 }
-.mySlides{
+
+.menu-btn{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 40px;
+	cursor: pointer;
 	display: none;
 }
-.prev, .next, .dropbtn {
-	cursor: pointer;
-	top: auto;
-	padding: 16px;
-	color: gray;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.5s ease;
-	border-radius: 0 3px 3px 0;
+/*About*/
+section{
+	width: 80%;
+	margin: 80px auto;
 }
-button{
-	background-color:#493022 ;
-	width: 200px;
+.about {
+	text-align: center;
+	font-size: 4vmin;
+	color: black;
 }
+ 
+ p{
+ 	color: gray;
+ 	padding: 0px;
+
+ }
+ 
+
+/*services*/
+ .container{
+ 	width: 100%;
+ 	padding-bottom: 50px;
+    color: black;
+   background-color: gray;
+ }
+ .container h1{
+ 	font-size: 7vmin;
+ 	text-align: center;
+ }
+
+ .services{ 
+ display:grid;
+ justify-items:center;
+ display: flex;
+ flex-direction: row;
+  }
+
+ .services h1{
+ 	font-size: 7vmin;
+ 	margin: 50px;
+
+ }
+
+ .services .line{
+ 	margin-bottom: 50px;
+ }
+ .services p{
+ 	color: black;
+ }
+
+ .services .ctn{
+ 	margin-top: 40px;
+ }
+
+ .content-col{
+ 	width: 40%;
+ }
+
+ .image-col{
+ 	width: 60%;
+ }
+
+ .projects{ 
+ display:grid;
+ justify-items:center;
+ display: flex;
+ flex-direction: row;
+  }
+
+.projects .row .col {
+	width: 50%;
+
+}
+
+
+ .content-col h1{
+ 	font-size: 7vmin;
+ 	color: black;
+ }
+
+ .content-col .line{
+ 	margin-left: -1px;
+ }
+
+ .content-col p{
+ 	padding: 0;
+ 	margin: 30px auto;
+ }
+
+ .content-col .ctn{
+ 	margin-left: -100px;
+ }
+
+ .contact{
+ 	flex-wrap: wrap;
+ 	background: gray;
+ 	text-align: center;
+ 	color: whitesmoke;
+ 	width: 30%;
+ 	display: flex;
+ 	padding: 50px;
+ 	align-items: center;
+ }
+
 
 /*Mobile device*/
 @media only screen and (max-width:850px){
