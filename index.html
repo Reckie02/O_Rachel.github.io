@@ -2,34 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta property="og:type" content="website">
-	<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Playfair">
+  <meta http-equiv="x-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="icon.jpg">
-	<title>Oluoch_Recky</title>
+	<title>O_Rachel</title>
 	<link rel="stylesheet" href="Myprofile.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!--icons-->
 	<script src="https://kit.fontawesome.com/e8c1a12266.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark" style="height: 60px;" bg-dark>
-	 <div class="container" >
-	<button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1" style="margin-right: 0px; margin-left: 0px;" aria-expanded="false">
-	<span class="sr-only"></span>
-	<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="navbar-collapse collapse" id="navcol-1" >
-		<!-- <div class="nav-items"> -->
-	<a href="#About"><i class="fa fa-fw fa-user"></i> About</a>
-        <a href="#Services"><i class="fa fa-fw fa-wrench"></i>Services</a>
-        <a href="#Contacts"><i class="fa fa-fw fa-envelope"></i> Contacts</a>
-      </div>
+	<!-- navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
+      <li class="active"><a href="#"></a>Home</li>
+      <li><a href="#About"></a>About</li>
+      <li><a href="#Services"></a>Services</li>
+      <li><a href="#Projects"></a>Projects</li>
+      <li class="ctn"><a href="#Contact"></a>contacts</li>
+    </ul>
   </div>
- </nav>
-	</div>
+  </nav>
+	<br><br><br>
   <br>                    
 	<img class="profile" src="Profile.jpg" width="300px" height="300px" border-radius="50%">
 	<h1 style="color:#414655;"> Oluoch Recky Rachel</h1>
@@ -37,28 +33,51 @@
 	<a href="https://www.twitter.com/OluochRecky"><i class="fa-brands fa-twitter"></i></a> &nbsp &nbsp           
 	
 
-	<div class="card" id="About"><h2>About Me</h2><br>              
-		
-	<p> hi! I am Oluoch Recky. I am experinced in website design and development. I use my experience to create innovative solutions to different problems in my society. I am currently a student at the Technical University of Mombasa</p></div>
+	 <div class="header-content">
+    <img class="profile" src="Images/Profile.jpg">
+      <h1>Oluoch Recky Rachel</h1>
+    </div>
+ 
+  <!-- About -->
+  <section>
+    <div class="about" id="About"> 
+      <h1>About</h1>
+      <p> I am Oluoch Recky Rachel From Mombasa Kenya. I am currently A Student Persuing a degree in Bachelor of science in Information Technology at The Technical University Of Mombasa.
+    I also do digital marketing and website development.</p>
+    </div>
+  </section>
+	
+		<section class="container" id="Services">
+    <h1>Services</h1>
+    <div class="line"></div>
+    <div class="services">
+    <div class="row">
+     <div class="col">
+        <h2>Digital Marketing</h2>
+          <img src="Images/.jpg">
+          <p> </p> 
+         <a href="#" class="ctn">Learn More</a>
+     </div>
+    </div>
+  </div>
+  </section>
 <br><br>
-		<div class="card" id="Services">
-			<h2> Services</h2>                       
-			  <div class="card" id="dgm">
-		         <h3>Digital Marketing</h3><br>
-			 <ul>
-		             <li>Social Media Ads and Creatives</li>
-			      <br> 
-			 <li>Content Marketing</li>
-	          </div>
-			<div class="card" id="wbs">
-				<h3>Website Development</h3><br>
-				<li>Website Design</li>
-				<br><li> Website Creation</li>
-				</div>
-		    </div>
-		</div>
-<br><br>
-<br><section id="resume" class="resume">
+<br>
+	 <section class="container" id="Projects">
+     <h1>Projects</h1>
+    <div class="line"></div>
+    <div class="Projects">
+    <div class="row">
+     <div class="col">
+        <h2>project1</h2>
+          <img src="Images/.jpg">
+          <p> </p> 
+         <a href="#" class="ctn">Learn More</a>
+     </div>
+  </div>
+  </section>
+	
+	<section id="resume" class="resume">
       <div class="container">
         <div class="section-title">
           <h2>Resume</h2>
@@ -99,33 +118,53 @@
     </section>
 <div class="row">
   <div class="col-sm-12 col-md-6 col-lg-6">
-<!--     <h2>Contacts</h2>                    
-    <a href="https://www.google.com/gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a><br><br>
-  </div><br> -->
-  <div class="col-sm-12 col-md-6 col-lg-6">		
-  <form action="/action_page.php">
-    <div class="mb-3 mt-3">
-     <label for="email" class="form-label">Email:</label>
-     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+	  
+<!-- 	  contact me -->
+ <section class="contact" id="Contact">
+    <div class="contact-form">
+           <h1>Contact</h1>
+         
+          <div class="row">
+
+      <div class="col-lg-6 col-12">
+         <form class="custom-form contact-form row" action="#" method="post" role="form">
+           <div class="col-lg-6 col-6">
+        <label for="contact-name" class="form-label">Name:</label>
+
+          <input type="text" name="contact-name" id="contact-name" class="form-control" required>
+        </div>
+<br>
+      <div class="col-lg-6 col-6">  
+        <label for="contact-phone" class="form-label">Phone:</label>
+
+          <input type="telephone" name="contact-phone" id="contact-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control"></div>
+      <br>
+      <div class="col-12">
+          <label for="contact-email" class="form-label">Email:</label>
+
+            <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" required="">
+          </div>
+
+          <br><br>
+          <label for="contact-message" class="form-label">Message:</label>
+        </div>
+        <div class="col">
+             <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
+      </div>
+
+      <div class=" col-lg-5 col-12 ms-auto">
+         <button type="submit" class="ctn">Send</button>
+      </div>
+    </form>
     </div>
-    <div class="mb-3">
-     <label for="pwd" class="form-label">Password:</label>
-     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-    </div>
-    <div class="form-check mb-3">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember"> Remember me
-    </label><br>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</div>
-</form>
-</div>
-<div class="col-sm-12 col-md-12 col-lg-12">
-<div class="form-floating">
-  <textarea class="form-control" id="comment" name="text" placeholder="Comment"></textarea>
-</div><br>
- <button type="submit" class="btn btn-primary">Submit</button>
-</div>
-	</body>
+  </section>
+  <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navLinks = document.querySelector('.nav-links')
+
+
+    menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('mobile-menu')})
+  </script>
+
+</body>
 </html>
