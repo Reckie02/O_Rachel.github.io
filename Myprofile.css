@@ -147,3 +147,93 @@ button{
 	background-color:#493022 ;
 	width: 200px;
 }
+
+/*Mobile device*/
+@media only screen and (max-width:850px){
+.navbar{
+	padding: 0;
+
+}
+.menu-btn{
+	display: block;
+}
+
+.profile{
+	max-width: 500px;
+	max-height: 500px;
+	border-radius: 50%;
+	padding-top: 20px;
+	
+}
+
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.nav-links{
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	background: lightblue;
+	margin-top: -900px;
+	transition: all 0.5s ease;
+}
+.mobile-menu{
+	margin-top: 0px;
+	border-bottom-right-radius: 30%;
+}
+.nav-links li{
+	margin: 30px auto;
+
+}
+/*services*/
+.services{
+	display: grid;
+	justify-items: center;
+	flex-direction: column;
+}
+
+/*Projects*/
+.projects{
+	display: grid;
+ 	justify-items: center;
+   flex-direction: column;
+ }
+
+/*contact*/
+.container{
+	width: 60%;
+}
+
+
+.contact{
+	width: 100%;
+	padding: 50px;
+}
+ 
+ .contact-form{
+ 	padding: 10px;
+ 	width: 100%;
+ }
+
+
+/* Animations*/
+img{
+	transition: transform .3s ease;
+}
+img:hover{
+	transform: scale(1.1);
+}
+.ctn:hover{ 
+background:cyan;
+color:darkblue;
+box-shadow:2px 2px 5px gray;
+
+ }
+
+ li:hover{
+ 	color: cyan;
+ 	cursor: zoom-in;
+ }
