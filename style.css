@@ -45,12 +45,16 @@ body , html{
 
 .nav-links{
 	display: flex;
-	align-items: left;
+	align-items: center;
 
 }
 
 .nav-links li{
 	margin: 0 30px;
+}
+
+.nav-links:hover{
+	color: white;
 }
 a {
 	text-decoration: none;
