@@ -126,12 +126,8 @@ color: black;
  .services h1{
  	font-size: 7vmin;
  	text-align: center;
-	 margin: 50px;
  }
 
- .services .line{
- 	margin-bottom: 50px;
- }
  .services p{
  	color: black;
  }
