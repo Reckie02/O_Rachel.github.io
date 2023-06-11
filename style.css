@@ -143,48 +143,12 @@ color: black;
  	color: black;
  }
 
- .services .ctn{
- 	margin-top: 40px;
- }
-
- .content-col{
- 	width: 40%;
- }
-
- .image-col{
- 	width: 60%;
- }
 
  .projects{ 
- display:grid;
  justify-items:center;
  display: flex;
- flex-direction: row;
+ flex-direction: column;
   }
-
-.projects .row .col {
-	width: 50%;
-
-}
-
-
- .content-col h1{
- 	font-size: 7vmin;
- 	color: black;
- }
-
- .content-col .line{
- 	margin-left: -1px;
- }
-
- .content-col p{
- 	padding: 0;
- 	margin: 30px auto;
- }
-
- .content-col .ctn{
- 	margin-left: -100px;
- }
 
  .contact{
  	flex-wrap: wrap;
