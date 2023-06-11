@@ -143,8 +143,6 @@ color: black;
 .resume {
 	width:60%;
 	background-color: gray;
-	display: flex;
-	align-items: center;
 }
 
 /* contact */
