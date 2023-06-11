@@ -140,7 +140,7 @@ color: black;
  }
 
 /* resume */
-.resume {
+.resume{
 	text-align:center;
 	width:60%;
 	background-color: gray;
@@ -151,7 +151,6 @@ color: black;
 	 text-align:center;
  	background: gray;
 	 width:30%;
-/* 	 margin: 50% auto; */
 
  }
 
