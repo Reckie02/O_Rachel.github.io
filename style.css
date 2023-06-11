@@ -142,7 +142,7 @@ color: black;
 /* resume */
 .resume{
 	text-align:center;
-	width:60%;
+	width:600px;
 	background-color: gray;
 }
 
@@ -150,7 +150,7 @@ color: black;
  .contact{
 	 text-align:center;
  	background: gray;
-	 width:30%;
+	 width:300px;
 
  }
 
