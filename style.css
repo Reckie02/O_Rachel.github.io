@@ -122,6 +122,11 @@ color: black;
  	padding-bottom: 50px;
         color: black;
         background-color: gray;
+	text align:center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+   flex-direction: column;
  }
  .services h1{
  	font-size: 7vmin;
@@ -211,6 +216,8 @@ body{
 
 /*Projects*/
 .projects{
+	width:100%;
+	background: gray;
 	justify-content: center;
 	display: flex;
 	align-items: center;
