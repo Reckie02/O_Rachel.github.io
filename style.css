@@ -17,6 +17,8 @@ ul{
 }
 body , html{
 	overflow-x: hidden;
+	text-align:center;
+	
 }
 .profile{
 	max-width: 500px;
