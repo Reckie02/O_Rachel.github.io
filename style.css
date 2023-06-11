@@ -138,6 +138,12 @@ color: black;
  .services p, .projects p{
  	color: black;
  }
+
+/* resume */
+.resume{
+	width:60%;
+	background-color:gray;
+}
  .contact{
 	 justify-content:center;
  	flex-wrap: wrap;
