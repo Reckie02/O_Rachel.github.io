@@ -142,15 +142,19 @@ color: black;
 
 /* resume */
 .resume{
+	align-items:center;
 	text-align:center;
 	width:600px;
 	background-color: gray;
+	background-position:center;
 }
 
 /* contact */
  .contact{
+	 align-items:center;
 	 text-align:center;
  	background: gray;
+	 background-position:center;
 	 width:300px;
 
  }
