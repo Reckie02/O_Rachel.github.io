@@ -141,15 +141,17 @@ color: black;
 
 /* resume */
 .resume {
+	text-align:center;
 	width:60%;
 	background-color: gray;
 }
 
 /* contact */
  .contact{
+	 text-align:center;
  	background: gray;
-	 width:50%;
-	 margin: 50% auto;
+	 width:30%;
+/* 	 margin: 50% auto; */
 
  }
 
