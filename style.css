@@ -129,13 +129,6 @@ color: black;
 	 margin: 50px;
  }
 
- .services{ 
- display:grid;
- justify-items:center;
- display: flex;
- flex-direction: row;
-  }
-
  .services .line{
  	margin-bottom: 50px;
  }
