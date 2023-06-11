@@ -99,7 +99,7 @@ color: black;
 	display: none;
 }
 /*About*/
-section{
+.about{
 	width: 80%;
 	margin: 80px auto;
 }
@@ -117,15 +117,16 @@ section{
  
 
 /*services*/
- .container{
+ .services{
  	width: 100%;
  	padding-bottom: 50px;
-    color: black;
-   background-color: gray;
+        color: black;
+        background-color: gray;
  }
- .container h1{
+ .services h1{
  	font-size: 7vmin;
  	text-align: center;
+	 margin: 50px;
  }
 
  .services{ 
@@ -134,12 +135,6 @@ section{
  display: flex;
  flex-direction: row;
   }
-
- .services h1{
- 	font-size: 7vmin;
- 	margin: 50px;
-
- }
 
  .services .line{
  	margin-bottom: 50px;
