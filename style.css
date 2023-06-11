@@ -118,8 +118,8 @@ color: black;
  }
  
 
-/*services*/
- .services{
+/*services and projects*/
+ .services, .projects{
  	width: 100%;
  	padding-bottom: 50px;
         color: black;
@@ -130,24 +130,14 @@ color: black;
 	align-items: center;
    flex-direction: column;
  }
- .services h1{
+ .services h1, .projects h1{
  	font-size: 7vmin;
  	text-align: center;
  }
 
- .services p{
+ .services p, .projects p{
  	color: black;
  }
-
-
- .projects{ 
-	 width:100%;
-	 background-color:gray;
- justify-items:center;
- display: flex;
- flex-direction: column;
-  }
-
  .contact{
 	 justify-content:center;
  	flex-wrap: wrap;
