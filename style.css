@@ -55,6 +55,8 @@ body , html{
 
 .nav-links:hover{
 	color: white;
+	cursor: pointer;
+	
 }
 a {
 	text-decoration: none;
@@ -182,11 +184,6 @@ color: black;
 	
 }
 
-.logo{
-	position: absolute;
-	top: 30px;
-	left: 30px;
-}
 .nav-links{
 	flex-direction: column;
 	width: 100%;
@@ -263,5 +260,5 @@ box-shadow:2px 2px 5px gray;
 
  li:hover{
  	color: darkblue;
- 	cursor: zoom-in;
+ 	cursor: pointer;
  }
