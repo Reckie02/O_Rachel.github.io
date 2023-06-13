@@ -19,6 +19,7 @@ body , html{
 	overflow-x: hidden;
 	text-align:center;
 	justify-content:center;
+	scroll-behavior: ;
 	
 }
 .profile{
@@ -148,20 +149,19 @@ color: black;
 
 /* resume */
 .resume{
+	border-left: 2px solid #1f5297;
 	align-items:center;
 	text-align:center;
-	width:600px;
-	background-color: gray;
-/* 	background-position:center; */
+	animation: fade-in;
 }
+
 
 /* contact */
  .contact{
-	 align-items:center;
-	 text-align:center;
  	background: gray;
-/* 	 background-position:center; */
 	 width:300px;
+	 cent
+
 
  }
 

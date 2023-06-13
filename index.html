@@ -14,12 +14,12 @@
   <!-- navbar -->
   <nav class="navbar">
     <ul class="nav-links">
-      <li class="active"><a href="#"></a>Home</li>
-      <li><a href="#about.html"></a>About</li>
-      <li><a href="#services.html"></a>Services</li>
-      <li><a href="#projects.html"></a>Projects</li>
-      <li><a href="#resume.html"></a>Resume</li>
-      <li class="ctn"><a href="#contact.html"></a>contacts</li>
+      <li class="active"><a href="#"> Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Resume">Resume</a></li>
+      <li class="ctn"><a href="#Contact">contacts</a></li>
     </ul>
 	  <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
   </nav>
@@ -32,14 +32,13 @@
     </div>
  
   <!-- About -->
-  <section class="about" id="about"> 
+  <section class="about" id="About"> 
       <h1>About</h1>
       <p> I am Oluoch Recky Rachel From Mombasa Kenya. I am currently A Student Persuing a degree in Bachelor of science in Information Technology at The Technical University Of Mombasa.
     I also do digital marketing and website development.</p>
   </section>
 
- <section class="services">
-	 <div id ="services">
+ <section class="services" id="Services">
     <h1>Services</h1>
   <div class="container-fluid mt-3">
   <div class="row">
@@ -60,13 +59,11 @@
     </div>
   </div>
 </div>
-	 </div>
 </section>
 
 <br>
 
-  <section class="projects">
-	  <div id ="projects">
+  <section class="projects" id="Projects">
      <h1>Projects</h1>
   
   <div class="container-fluid mt-3">
@@ -88,19 +85,13 @@
     </div>
   </div>
 </div>
-	  </div>
 </section>
 <br>
-<section class="resume">
-	<div id = "resume">
+<section class="resume" data-aos="fade-up" id="Resume" >
           <h2>Resume</h2>
-	 </div>
-	      <div id="cv-line"></div>
         <div class="row">
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Recky Oluoch</h4>
+              <h3>Recky Oluoch</h3>
                <ul>
                 <li>Mombasa, Kenya</li>
                 <li>+254</li>
@@ -113,23 +104,23 @@
               <h4>Bachelor of Science in Information Technology</h4>
               <h5>Presently - 2023</h5>
               <p><em>Technical University of Mombasa</em></p>
-              <p>
+              
             </div>
           </div>
           <div class="resume-item">
               <h4>Website Development, 3D Printing, Digital Marketing</h4>
               <h5>Presently - 2023</h5>
               <p><em>Pwaniteknowgalz</em></p>
-              <p>
+              
             </div>
           </div>
 	      </ul>
             </div>
           </div>
-	</div>
-    </section>
-<br>
-  <section class="contact">
+</section>
+    
+
+  <section class="contact" id="Contact">
     <form class="custom-form contact-form row" action="#" method="post" role="form">
       <div class="row">
     
@@ -158,11 +149,14 @@
         <div class="col">
              <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
       </div>
+    </div>
 
       <div class=" col-lg-5 col-12 ms-auto">
          <button type="submit" class="ctn">Send</button>
       </div>
     </form>
+
+  </div>
   </section>
   <script>
     const menuBtn = document.querySelector('.menu-btn')
