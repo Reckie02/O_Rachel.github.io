@@ -149,20 +149,22 @@ color: black;
 
 /* resume */
 .resume{
-	border-left: 2px solid #1f5297;
 	align-items:center;
 	text-align:center;
 	animation: fade-in;
 }
 
 
+
 /* contact */
  .contact{
- 	background: gray;
-	 width:300px;
-	 cent
-
-
+ 	display: flex;
+ 	justify-content: center;
+ 	margin: 0 auto;
+ 	width: 50%;
+ 	background-color: gray;
+ 	border-bottom-right-radius: 10%;
+ 	padding: 80px;
  }
 
 
