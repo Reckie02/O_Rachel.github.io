@@ -8,10 +8,10 @@
 }
 ul{
 	list-style: none;
+	color: whitesmoke;
 }
 
 .active{
-	color: skyblue;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -39,24 +39,24 @@ body , html{
 	width: 100%;
 	justify-content: space-between;
 	padding: 10px;
-	color: whitesmoke;
    background-color: gray;
+   text-decoration-color: skyblue;
 }
 
 .nav-links{
 	display: flex;
 	align-items: center;
-	color: whitesmoke;
+	font-color: whitesmoke;
 
 }
 
 .nav-links li{
 	margin: 0 30px;
-	color: whitesmoke;
+	color: whitesmoke;*/
 }
 
 .nav-links:hover{
-	color: cyan;
+	color: skyblue;
 	cursor: pointer;
 	
 }
@@ -279,7 +279,7 @@ box-shadow:2px 2px 5px gray;
  }
 
  li:hover{
- 	color: darkblue;
+ 	color: skyblue;
  	cursor: pointer;
  }
 }
