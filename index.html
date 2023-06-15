@@ -11,6 +11,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Animate on Scoll -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ 
 </head>
 <body>
   <!-- navbar -->
@@ -46,17 +52,17 @@
     <h1>Services</h1>
   <div class="container-fluid mt-3">
   <div class="row">
-    <div data-aos="fade" data-aos-duration="800" class="col p-3">
+    <div data-aos="fade-right" class="col p-3">
       <h2>Digital Marketing</h2>
            <img src="dgm.jpg">
           <p> </p>
     </div>
-    <div class="col p-3">
+    <div data-aos="fade-down" class="col p-3">
       <h2>Website Development</h2>
           <img src="website.jpg">
           <p> </p> 
     </div>
-    <div class="col p-3">
+    <div data-aos="fade-left" class="col p-3">
       <h2>3D Printing</h2>
           <img src="3d.jpg">
           <p> </p> 
@@ -98,7 +104,7 @@
               <h3>Recky Oluoch</h3>
                <ul>
                 <li>Mombasa, Kenya</li>
-                <li>+254</li>
+                <li>+254 742381294</li>
                 <li>oluochrachel384@gmail.com</li>
               </ul>
             </div>
@@ -165,7 +171,11 @@
 
 
     menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('mobile-menu')})
-  </script>
-
+ </script>
+ <script>
+  AOS.init({
+    duration: 3000
+  });
+</script>
 </body>
 </html>
