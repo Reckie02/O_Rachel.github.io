@@ -149,8 +149,6 @@ color: black;
  }
  .services img{
  	width: 200px;
- 	height: 200px;
- 	opacity: 0;
  	transform: translateY(10px);
  	transition: all is ease-out;
 
