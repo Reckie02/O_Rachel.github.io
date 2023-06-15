@@ -133,7 +133,7 @@ color: black;
 	color: black;
 }
  
- p{
+ .about p{
  	color: gray;
  	padding: 0px;
  	font-family: ;
@@ -161,6 +161,8 @@ color: black;
 
  .services p, .projects p{
  	color: black;
+ 	font-size: 20px;
+ 	align-text: left;
  }
  .services img{
  	width: 300px;
@@ -202,7 +204,15 @@ img:hover{
   border: 2px solid #1f5297;
 }
 
+.resume p{
+	font-size: 15px;
+	color: gray;
+}
 
+
+h6{
+	color: sandybrown;
+}
 
 
 /* contact */
