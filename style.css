@@ -9,12 +9,14 @@
 }
 ul{
 	list-style: none;
-	color: whitesmoke;
+	
 }
 
 .active{
 	text-decoration: underline;
 	font-weight: bold;
+	font-size: 25px;
+	
 }
 body , html{
 	
@@ -53,6 +55,7 @@ i {
 	width: 100%;
 	justify-content: space-around;
 	padding: 10px;
+	color: whitesmoke;
    background-color: gray;
 }
 
@@ -96,10 +99,10 @@ a {
 .line{
 	width: 150px;
 	height: 4px;
-	background: skyblue;
 	margin: 10px auto;
 	border-radius: 5px;
-}
+	background: whitesmoke;
+}	
 .header-content h1{
 font-size: 7vmin;
 margin-top: 50px;
@@ -111,7 +114,10 @@ color: black;
 	padding: 8px 15px;
 	background: skyblue;
 	border-radius: 30px;
-	color: whitesmoke;
+	
+}
+.ctn:hover{
+	background-color: whitesmoke;
 }
 
 .menu-btn{
