@@ -8,6 +8,7 @@
 }
 ul{
 	list-style: none;
+	color: black;
 }
 
 .active{
@@ -33,28 +34,29 @@ body , html{
 /*navbar*/
 .navbar {
 	position:absolute ;
-	left: 0;
+	right: 0;
 	top: 0;
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	padding: 20px;
-	color: darkblue;
+	padding: 10px;
    background-color: gray;
 }
 
 .nav-links{
 	display: flex;
 	align-items: center;
+	color: whitesmoke;
 
 }
 
 .nav-links li{
 	margin: 0 30px;
+	color: whitesmoke;
 }
 
 .nav-links:hover{
-	color: white;
+	color: cyan;
 	cursor: pointer;
 	
 }
@@ -148,14 +150,22 @@ color: black;
  }
  .services img{
  	width: 200px;
+ 	height: 200px;
+ 	opacity: 0;
+ 	transform: translateY(10px);
+ 	transition: all is ease-out;
 
+ }
+
+ img: hover{
+ 	transform: scale(1.1);
  }
 
 /* resume */
 .resume{
 	align-items:center;
 	text-align:center;
-	animation: fade-in;
+	animation-on-scroll: fade-in;
 }
 
 
