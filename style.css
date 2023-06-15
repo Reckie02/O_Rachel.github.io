@@ -24,6 +24,12 @@ body , html{
 	font-family:caladea ;
 	
 }
+h2{
+	font-size: 50px;
+}
+h3{
+	font-size: 40px;
+}
 
 i {
 	font-size: 50px;
@@ -183,6 +189,19 @@ img:hover{
 	font color: black;
 	
 }
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: 30px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
 
 
 
