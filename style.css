@@ -146,6 +146,10 @@ color: black;
  .services p, .projects p{
  	color: black;
  }
+ .services img{
+ 	width: 200px;
+
+ }
 
 /* resume */
 .resume{
@@ -220,6 +224,10 @@ body{
 	align-items: center;
    flex-direction: column;
 }
+.services img{
+	width: 100px;
+	border-radius: 10%;
+}
 
 /*Projects*/
 .projects{
@@ -264,3 +272,4 @@ box-shadow:2px 2px 5px gray;
  	color: darkblue;
  	cursor: pointer;
  }
+}
