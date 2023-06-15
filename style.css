@@ -22,6 +22,15 @@ body , html{
 	scroll-behavior: ;
 	
 }
+
+i {
+	font-size: 50px;
+
+}
+[data-aos^=fade][data-aos^=fade].aos-animate{
+	opacity: 1;
+	transform: translateZ(0);
+}
 .profile{
 	max-width: 500px;
 	max-height: 500px;
@@ -151,12 +160,18 @@ color: black;
  	width: 200px;
  	transform: translateY(10px);
  	transition: all is ease-out;
+ 	animation-delay: 1s;
 
  }
-
- img: hover{
+ .services img:hover{
  	transform: scale(1.1);
  }
+
+
+img:hover{
+	transform: scale(1.1);
+	transition: transform .3s ease;
+}
 
 /* resume */
 .resume{
