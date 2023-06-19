@@ -298,15 +298,17 @@ body{
 	width: 100px;
 	border-radius: 10%;
 }
+img:hover{
+	transition: transform .3s ease;
+	transform: scale(1.1);
+
+}
+
 
 /*Projects*/
-.projects{
-	width:100%;
-	background: gray;
-	justify-content: center;
-	display: flex;
-	align-items: center;
-   flex-direction: column;
+.projects img{
+ 	width: 250px;
+ 	height: 250px;
  }
 
 /*contact*/
