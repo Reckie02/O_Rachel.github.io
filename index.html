@@ -20,22 +20,22 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav data-aos="fade-down" class="navbar">
-    <ul class="nav-links">
-      <li class="active"><a href="#"> Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Services">Services</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Resume">Resume</a></li>
-      <li class="ctn"><a href="#Contact">contacts</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-links">
+      <div class="active"><a href="#"> Home</a></div>
+      <a href="#About">About</a>
+      <a href="#Services">Services</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Resume">Resume</a>
+      <a href="#Contact">contacts</a>
+    </div>
 	  <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
   </nav>
 	
-	<br><br><br>
+	<br><br><br><br>
 
     <div class="header-content">
-    <img data-aos="zoom-in" class="profile" src="Profile.jpg">
+    <img data-aos="zoom-in" class="profile" src="images/Profile.jpg">
       <h1>Oluoch Recky Rachel</h1>
 
     <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin"></i></a>
@@ -50,23 +50,29 @@
 
  <section class="services" id="Services">
     <h2>Services</h2>
-  <div class="container-fluid mt-3">
+  <div class="container-fluid mt-3" >
   <div class="row">
     <div data-aos="fade-right" class="col p-3">
+      <div class="card">
       <h3>Digital Marketing</h3>
-           <img src="dgm.jpg">
+           <img src="images/dgm.jpg">
           <p> </p>
     </div>
-    <div data-aos="fade-down" class="col p-3">
+  </div>
+    <div data-aos="fade-down" class="col p-3" >
+      <div class="card">
       <h3>Website Development</h3>
-          <img src="website.jpg">
-          <p> </p> 
+          <img src="images/website.jpg">
+          <p> </p>
+      </div> 
     </div>
     <div data-aos="fade-left" class="col p-3">
+      <div class="card">
       <h3>3D Printing</h3>
-          <img src="3d.jpg">
+          <img src="images/3d.jpg">
           <p> </p> 
     </div>
+  </div>
   </div>
 </div>
 </section>
@@ -79,20 +85,27 @@
   <div class="container-fluid mt-3">
   <div class="row">
     <div class="col p-3 ">
+      <div class="card">
       <h3>Shareiki</h3>
-          <a href="https://reckie02.github.io/Shareiki.github.io/"> <img src="shareiki.png"></a>
-          <p> </p>
+          <a href="https://reckie02.github.io/Shareiki.github.io/"> <img src="images/shareiki.png"></a>
+          <p>A charity organization website </p>
     </div>
+  </div>
+
     <div class="col p-3 ">
-      <h3>Project 2</h3>
-          <img src="Images/.jpg">
-          <p> </p> 
+      <div class="card">
+      <h3>Sheblog's</h3>
+          <a href="https://reckie02.github.io/blog/"><img src="images/sheblog's.png"></a>
+          <p>A lifestyle blog website. </p> 
     </div>
+  </div>
     <div class="col p-3 ">
+      <div class="card">
       <h3>Project 3</h3>
-          <img src="Images/.jpg">
+          <img src="images/.jpg">
           <p> </p> 
     </div>
+  </div>
   </div>
 </div>
 </section>
@@ -150,33 +163,27 @@
            <h2>Contact</h2>
 
            <div>
-        <label for="contact-name" class="form-label">Name:</label>
-
-          <input type="text" name="contact-name" id="contact-name" class="form-control" required>
+          <input type="text" name="contact-name" id="contact-name" placeholder="Name:" class="form-control" required>
         </div>
-<br>
+<br><br>
       <div>  
-        <label for="contact-phone" class="form-label">Phone:</label>
-        
-          <input type="telephone" name="contact-phone" id="contact-phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control"></div>
-      <br>
+          <input type="telephone" name="contact-phone" id="contact-phone" placeholder="Phone No:" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control"></div>
+      <br><br>
       <div>
-          <label for="contact-email" class="form-label">Email:</label>
-
-            <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" required="">
-          </div>
+            <input type="email" name="contact-email" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" class="form-control" required="">
+      </div>
 
           <br><br>
-          <label for="contact-message" class="form-label">Message:</label>
-        </div>
+        
         <div class="col">
-             <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
+             <textarea  rows="5" id="contact-message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
       </div>
-    </div>
+   
 
       <div class="ms-auto">
          <button type="submit" class="ctn">Send</button>
       </div>
+    </div>
     </form>
 
   </div>

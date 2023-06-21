@@ -2,10 +2,11 @@
 @import url(https://fonts.googleapis.com/css2)
 
 * {
+	box-sizing: border-box;
 	
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 }
 ul{
 	list-style: none;
@@ -13,21 +14,26 @@ ul{
 }
 
 .active{
-	text-decoration: underline;
+	text-decoration: double underline;
 	font-weight: bold;
 	font-size: 25px;
+	color: black;
 	
 }
 body , html{
-	
+	box-sizing: border-box;
+	margin: 0 auto;
 	text-align:center;
 	justify-content:center;
 	scroll-behavior: ;
-	font-family:caladea ;
+	font-family:cartena ;
+	display: block;
+	border-width: 90%;
 	
 }
 h2{
 	font-size: 50px;
+	text-decoration: double underline;
 }
 h3{
 	font-size: 40px;
@@ -48,36 +54,47 @@ i {
 
 /*navbar*/
 .navbar {
-	position:absolute ;
-	right: 0;
-	top: 0;
+	width: 100wmin;
 	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	padding: 10px;
-	color: whitesmoke;
    background-color: gray;
-}
+   opacity: 0.6;
+   justify-content: space-around;
+  
+ }
+ .navbar .active{
+ 	color: black !important;;
+ 	text-decoration: i;
+ }
 
 .nav-links{
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	font-size: 20px;
+	color: black !important;z-index:999;
 
 }
 
-.nav-links li{
-	margin: 0 30px;
+.nav-links div{
+	margin: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	color: whitesmoke; !important;z-index:999;
 	
 }
 
-.nav-links:hover{
-	
-	cursor: pointer;
-	
-}
-a {
+.navbar a {
 	text-decoration: none;
+	padding: 20px;
+	color: whitesmoke;
+
+}
+.navbar a:hover{
+	color: #111;
+	cursor: pointer;
+	scale: 1.5;
+
+
 }
 .header-content {
 	display: grid;
@@ -110,12 +127,6 @@ margin-bottom: 30px;
 color: black;
 }
 
-.ctn {
-	padding: 8px 15px;
-	background: skyblue;
-	border-radius: 30px;
-	
-}
 .ctn:hover{
 	background-color: whitesmoke;
 }
@@ -143,16 +154,28 @@ color: black;
  	color: gray;
  	padding: 0px;
  	font-family: ;
+ 	font-size: 3vmin;
+ 	display: flex;
 
  }
  
+ .card{
+ 	background-color: gray;
+ 	display: flex;
+ 	align-items: center;
+ 	height: 60vmin;
+ 	opacity: 1;
+ 	text-decoration-color: black;
+
+ }
 
 /*services and projects*/
  .services, .projects{
  	width: 100%;
  	padding-bottom: 50px;
         color: black;
-        background-color: gray;
+      
+
 	text align:center;
 	justify-content: center;
 	display: flex;
@@ -163,6 +186,7 @@ color: black;
  .services h1, .projects h1{
  	font-size: 7vmin;
  	text-align: center;
+ 	text-decoration: double underline;
  }
 
  .services p, .projects p{
@@ -173,7 +197,7 @@ color: black;
  .services img{
  	width: 250px;
  	height: 250px;
- 	border-radius: 5%;
+ 	border-radius: 1%;
  	
 
  }
@@ -227,7 +251,7 @@ img:hover{
 
 
 h6{
-	color: sandybrown;
+	color: black;
 }
 
 
@@ -238,19 +262,38 @@ h6{
  	margin: 0 auto;
  	width: 50%;
  	background-color: gray;
- 	border-bottom-right-radius: 10%;
- 	padding: 80px;
+ 	opacity: 0.2;
+ 	border-radius: 1%;
+ 
+ }
+ .contact .form-control{
+ 	width: 50%;
+ 	display: flex;
+ 	margin: 0 auto;
+ 	
+ }
+ .contact input , text-area{
+ 	border-width:50% ;
+ 	content-visibility: auto;
+ 	background-color: gray;
+
+
  }
 
 
 /*Mobile device*/
-@media only screen and (max-width:850px){
-.navbar{
-	padding: 0;
+@media only screen and (max-width:826px){
+	body html{
+		display: block;
+	}
 
-}
 .menu-btn{
 	display: block;
+	font-size: 8vmin;
+	color: whitesmoke;
+	background-color: gray;
+	width: 82px;
+
 }
 
 .profile{
@@ -275,6 +318,7 @@ h6{
 }
 .nav-links li{
 	margin: 30px auto;
+	color: whitesmoke;
 
 }
 body{
@@ -296,7 +340,7 @@ body{
 }
 .services img{
 	width: 100px;
-	border-radius: 10%;
+	border-radius: 1%;
 }
 img:hover{
 	transition: transform .3s ease;
@@ -308,7 +352,7 @@ img:hover{
 /*Projects*/
 .projects img{
  	width: 250px;
- 	height: 250px;
+ 	height: 300px;
  }
 
 /*contact*/
