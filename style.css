@@ -98,7 +98,7 @@ i {
 
 }
 .header-content {
-	display: grid;
+	display: block;
 	place-items: center;
 	align-items: flex-end;
 	justify-content: center;
@@ -144,7 +144,6 @@ color: black;
 .menu-btn{
 	position: absolute;
 	top: 30px;
-	right: 30px;
 	width: 40px;
 	cursor: pointer;
 	display: none;
@@ -232,7 +231,6 @@ img:hover{
 }
 
 .resume .resume-item::before {
-  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -248,7 +246,7 @@ img:hover{
 	color: black;
 }
 ul.timeline{
-	list-style-type: none;
+	list-style-type: circle;
 	position: relative;
 	padding-left: 1.5rem;
 	overflow-x: hidden;
@@ -302,16 +300,21 @@ h6{
 
 /*Mobile device*/
 @media only screen and (max-width:826px){
-	body html{
+	body{
 		display: block;
+		justify-content: center;
+	align-items: center;
+	text-align:center;
 	}
 
 .menu-btn{
-	display: block;
-	font-size: 8vmin;
+	position: absolute;
+	display: flex;
+	font-size: 9vmin;
 	color: whitesmoke;
 	background-color: gray;
 	width: 82px;
+	justify-content: space-around;
 
 }
 
@@ -338,12 +341,6 @@ h6{
 .nav-links li{
 	margin: 30px auto;
 	color: whitesmoke;
-
-}
-body{
-	justify-content: center;
-	align-items: center;
-	text-align:center;
    
 }
 /*About*/
@@ -353,18 +350,23 @@ body{
 /*services*/
 .section-3{
 	justify-content: center;
-	display: flex;
+	display: block;
 	align-items: center;
    flex-direction: column;
 }
 .section-3 img{
-	width: 100px;
+	width: 300px;
 	border-radius: 1%;
 }
 img:hover{
 	transition: transform .3s ease;
 	transform: scale(1.1);
 
+}
+
+/*projects and services*/
+.card{
+	height: 100vmin;
 }
 
 /*contact*/
