@@ -29,6 +29,7 @@ body , html{
 	font-family:cartena ;
 	display: block;
 	border-width: 90%;
+	margin: 10px auto;
 	
 }
 h2{
@@ -103,9 +104,18 @@ i {
 	justify-content: center;
 }
 .header-content img{
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	border-radius: 40%;
+	position: relative;
+}
+
+.fa-brands{
+	font-size: 4vmin;
+	color: gray;
+	display: flex;
+}
+
 }
 .header-content {
 	margin-bottom: 150px;
@@ -161,6 +171,7 @@ color: black;
  
  .card{
  	background-color: gray;
+ 	border-color: gray;
  	display: flex;
  	align-items: center;
  	height: 60vmin;
@@ -170,12 +181,10 @@ color: black;
  }
 
 /*services and projects*/
- .services, .projects{
- 	width: 100%;
+ .section-3{
+ 	background-color: gray;
  	padding-bottom: 50px;
         color: black;
-      
-
 	text align:center;
 	justify-content: center;
 	display: flex;
@@ -183,25 +192,25 @@ color: black;
    flex-direction: column;
    justify-content: space-between;
  }
- .services h1, .projects h1{
+ .section-3 h1{
  	font-size: 7vmin;
  	text-align: center;
  	text-decoration: double underline;
  }
 
- .services p, .projects p{
+ .section-3 p{
  	color: black;
  	font-size: 20px;
  	align-text: left;
  }
- .services img{
- 	width: 250px;
+ .section-3 img{
+ 	width: 350px;
  	height: 250px;
  	border-radius: 1%;
  	
 
  }
- .services img:hover{
+ .section-3 img:hover{
  	transform: scale(1.1);
  }
 
@@ -209,16 +218,6 @@ color: black;
 img:hover{
 	transition: transform .3s ease;
 	transform: scale(1.1);
-
-}
-
-
-/*Projects*/
-.projects img{
- 	width: 250px;
- 	height: 250px;
- 	
- 	
 
  }
 /* resume */
@@ -246,7 +245,13 @@ img:hover{
 
 .resume p{
 	font-size: 15px;
-	color: gray;
+	color: black;
+}
+ul.timeline{
+	list-style-type: none;
+	position: relative;
+	padding-left: 1.5rem;
+	overflow-x: hidden;
 }
 
 
@@ -260,8 +265,9 @@ h6{
  	display: flex;
  	justify-content: center;
  	margin: 0 auto;
- 	width: 50%;
- 	background-color: gray;
+ 	width: 80%;
+ 	background-color:gray;
+ 	backdrop-filter: shadow;
  	opacity: 0.2;
  	border-radius: 1%;
  
@@ -272,12 +278,25 @@ h6{
  	margin: 0 auto;
  	
  }
- .contact input , text-area{
+ .contact input{
  	border-width:50% ;
  	content-visibility: auto;
+ 	background-color:whitesmoke;
+ 	color: whitesmoke;
+ }
+#contact-message{
+ 	width: 150wmin;
+ }
+ .contact .ctn{
+ 	width: 50%;
+ 	background-color: dimgray;
+ }
+
+ .footer{
  	background-color: gray;
-
-
+ 	height: 30px;
+ 	position: bottom;
+ margin-bottom: 0px;
  }
 
 
@@ -332,13 +351,13 @@ body{
 	text-align: center;
 }
 /*services*/
-.services{
+.section-3{
 	justify-content: center;
 	display: flex;
 	align-items: center;
    flex-direction: column;
 }
-.services img{
+.section-3 img{
 	width: 100px;
 	border-radius: 1%;
 }
@@ -347,13 +366,6 @@ img:hover{
 	transform: scale(1.1);
 
 }
-
-
-/*Projects*/
-.projects img{
- 	width: 250px;
- 	height: 300px;
- }
 
 /*contact*/
 .contact{

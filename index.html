@@ -20,12 +20,13 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav class="navbar">
+  <nav class="navbar fixed-top">
+    <!-- <a class="navbar-brand js-scroll-trigger" href="#header-content">O.R.R</a> -->
     <div class="nav-links">
       <div class="active"><a href="#"> Home</a></div>
       <a href="#About">About</a>
       <a href="#Services">Services</a>
-      <a href="#Projects">Projects</a>
+      <a href="#projects">Projects</a>
       <a href="#Resume">Resume</a>
       <a href="#Contact">contacts</a>
     </div>
@@ -34,12 +35,18 @@
 	
 	<br><br><br><br>
 
-    <div class="header-content">
-    <img data-aos="zoom-in" class="profile" src="images/Profile.jpg">
-      <h1>Oluoch Recky Rachel</h1>
 
-    <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin"></i></a>
- 
+    <div class="header-content" id="header-content">
+    <img data-aos="zoom-in" class="profile" src="images/Profile.jpg">
+      <h1>Oluoch Recky Rachel</h1
+      >
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i></a>
+        &nbsp &nbsp
+        <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i></a>
+         &nbsp &nbsp
+        <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i></a>
+      </div>
  </div>
   <!-- About -->
   <section class="about" id="About"> 
@@ -48,13 +55,14 @@
     I also do digital marketing and website development.</p>
   </section>
 
- <section class="services" id="Services">
+ <section class="section-3" id="Services">
     <h2>Services</h2>
   <div class="container-fluid mt-3" >
   <div class="row">
     <div data-aos="fade-right" class="col p-3">
       <div class="card">
       <h3>Digital Marketing</h3>
+      <br>
            <img src="images/dgm.jpg">
           <p> </p>
     </div>
@@ -62,6 +70,7 @@
     <div data-aos="fade-down" class="col p-3" >
       <div class="card">
       <h3>Website Development</h3>
+      <br>
           <img src="images/website.jpg">
           <p> </p>
       </div> 
@@ -69,18 +78,18 @@
     <div data-aos="fade-left" class="col p-3">
       <div class="card">
       <h3>3D Printing</h3>
+      <br>
           <img src="images/3d.jpg">
           <p> </p> 
     </div>
   </div>
   </div>
 </div>
-</section>
 
 <br>
 
-  <section class="projects" id="Projects">
-     <h2>Projects</h2>
+
+     <h2 id="projects">Projects</h2>
   
   <div class="container-fluid mt-3">
   <div class="row">
@@ -88,6 +97,7 @@
       <div class="card">
       <h3>Shareiki</h3>
           <a href="https://reckie02.github.io/Shareiki.github.io/"> <img src="images/shareiki.png"></a>
+          <br>
           <p>A charity organization website </p>
     </div>
   </div>
@@ -96,6 +106,7 @@
       <div class="card">
       <h3>Sheblog's</h3>
           <a href="https://reckie02.github.io/blog/"><img src="images/sheblog's.png"></a>
+          <br>
           <p>A lifestyle blog website. </p> 
     </div>
   </div>
@@ -103,13 +114,17 @@
       <div class="card">
       <h3>Project 3</h3>
           <img src="images/.jpg">
+          <br>
           <p> </p> 
     </div>
   </div>
   </div>
 </div>
+</div>
 </section>
 <br>
+
+<!-- resume -->
 <section class="resume"  id="Resume">
           <h2>Resume</h2>
         
@@ -125,69 +140,85 @@
           <div class="row">
             
             <h3 class="resume-title">Education</h3>
-            <div class="col-md-6 ">
+            <div class="col-lg-8 mx-auto">
+              <!-- timeline -->
+              <ul class="timeline">
+
+                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
             <div data-aos="fade-right" class="resume-item">
               <h4>Bachelor of Science in Information Technology</h4>
               <h5>Presently - 2023</h5>
               <h6><em>Technical University of Mombasa</em></h6>
             </div>
+          </li>
               
-            </div>
-            <div class="col-md-6 ">
+              <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
           <div  data-aos="fade-left" class="resume-item">
               <h4>Website Development, 3D Printing, Digital Marketing</h4>
               <h5>Presently - 2023</h5>
               <h6><em>Pwaniteknowgalz</em></h6>
             </div>
-              
-            </div>
+              </li>
 
-            <div class="col-md-6 ">
+               <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+          <div  data-aos="fade-left" class="resume-item">
+              <h4>Digital Marketing</h4>
+              <h5>Jan - May (2023)</h5>
+              <h6><em>Aleph Digital AD School</em></h6>
+            </div>
+              </li>
+               
+              <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
           <div  data-aos="fade-left" class="resume-item">
               <h4>High-School</h4>
-              <h5>  Jan 2016 - Apri 2021</h5>
+              <h5>  Jan 2016 - April 2021</h5>
               <p>Completed with an A and A- in Computer Studies and Geography respectively and a mean grade of B-</p>
               <h6><em>Ng'iya Girls HighSchool</em></h6>
             </div>
-              
+             </li> 
             </div>
+          </ul>
           </div>
+        </div>
        
 </section>
     
-
+<br> <br>
   <section data-aos="fade-right" class="contact"  id="Contact" >
     <form class="custom-form contact-form row" action="#" method="post" role="form">
       <div class="row">
     
-           <h2>Contact</h2>
-
+           <h2>Contact <br><br></h2>
            <div>
           <input type="text" name="contact-name" id="contact-name" placeholder="Name:" class="form-control" required>
         </div>
-<br><br>
+<br><br><br>
       <div>  
           <input type="telephone" name="contact-phone" id="contact-phone" placeholder="Phone No:" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control"></div>
-      <br><br>
+      <br><br><br>
       <div>
             <input type="email" name="contact-email" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" class="form-control" required="">
       </div>
 
-          <br><br>
+          <br><br><br><br>
         
-        <div class="col">
-             <textarea  rows="5" id="contact-message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
+        <div>
+             <textarea id="contact-message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
       </div>
    
 
       <div class="ms-auto">
-         <button type="submit" class="ctn">Send</button>
+         <button type="submit" class="ctn rounded">Send</button>
       </div>
     </div>
     </form>
 
   </div>
   </section>
+  <br>
+  <div class="footer">
+    <p>BY: oluoch recky | oluochrachel384@gmail.com</p>
+  </div>
   <script>
     const menuBtn = document.querySelector('.menu-btn')
     const navLinks = document.querySelector('.nav-links')
