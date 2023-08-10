@@ -234,36 +234,59 @@
 </section>
     
 <br> <br>
+
+<!-- <?php
+  if( !empty($_POST["send"])){
+     $userName = $_POST["userName"]
+     $userEmail = $_POST["userEmail"]
+     $userPhone = $_POST["userPhone"]
+     $message = $_POST["message"]
+     $toEmail = $_POST["oluochrachel384@gmail.com"]
+
+     $mailHeaders ="Name: " . $userName . 
+     "\r\n Email: " . $userEmail .
+     "\r\n Phone: " . $userPhone .
+     "\r\n message: " . $message . "\r\n";
+     if(mail($toEmail, $userName, $mailHeaders)){
+      $message = " Your Information is Recieved Successfully"
+     }
+  }
+  ?> -->
   <section data-aos="fade-right" class="contact"  id="Contact" >
-    <form class="custom-form contact-form row" action="#" method="post" role="form">
-      <div class="row">
+    <div class="form-container">
+    <form method="post" name="emailContact">
     
            <h2>Contact <br><br></h2>
-           <div>
-          <input type="text" name="contact-name" id="contact-name" placeholder="Name:" class="form-control" required>
-        </div>
-<br><br><br>
-      <div>  
-          <input type="telephone" name="contact-phone" id="contact-phone" placeholder="Phone No:" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control"></div>
-      <br><br><br>
-      <div>
-            <input type="email" name="contact-email" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" class="form-control" required="">
-      </div>
 
-          <br><br><br><br>
+           <div class="input-row">
+          <input type="text" name="userName" placeholder="Name:" required>
+        </div>
+<br>
+
+      <div class="input-row">  
+          <input type="telephone" name="userPhone" placeholder="Phone No:" required></div>
+<br>
+
+      <div class="input-row">
+            <input type="email" name="userEmail" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" required>
+      </div>
+ <br>
         
-        <div>
-             <textarea rows=8 cols=60 id="contact-message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
+        <div class="input-row">
+             <textarea rows=8 cols=60 id="message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
       </div>
    
 
-      <div class="ms-auto">
+      <div class="input-row">
          <button type="submit" class="ctn rounded">Send</button>
+         <?php if (!empty(message)){?>
+         <div class="sent">
+           <strong><php echo $message;?></strong>
+         </div>
+         <?php }?> 
       </div>
     </div>
     </form>
-
-  </div>
   </section>
   <br>
   <!-- <div class="footer">
