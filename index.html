@@ -28,6 +28,7 @@
 </head>
 
 <body>
+  
   <div class="header-content" id="header-content">
 
   <!-- navbar -->
@@ -56,72 +57,24 @@
    <div>
     <h1>Oluoch Recky Rachel</h1>
       <p>IT Services</p>
-      <h3 class="cd-headline clip is-full-width">
-        <!-- <span>Lorem ipsum dolor sit amet </span> -->
-        <span class="carousel">
-          <b class="is-visible">Web Developer</b>
-          <b>Web Design</b>
-                    <b>Responsive Design</b>
-                    <b> Digital Marketing</b>
-                    <b> 3D Printing</b>
-          <!-- <b>Creative Design</b>
-          <b>Graphic Design</b> -->
-        </span>
-      </h3>
-    </div>
+     <div class="scroll" id="animation">
+       <div class="scrolling-words">
+           <span id="service 1"></span>
+           <span id="service 2"></span>
+       </div>
+     </div>
+     <svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
+   </div>
   </div>
-  
-
-<!--   <div class="cd-headline clip is-full-width">
-  <span class="carousel">
-          <b class="is-visible">Web Developer</b>
-          <b>Web Design</b>
-                    <b>Responsive Design</b>
-                    <b> Digital Marketing</b>
-                    <b> 3D Printing</b>
-        </span>
-</div>
- -->
-	
-    <!-- <!-- Navigation
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-		</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            </li> -->
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact me</a>
-            </li>
-          </ul>
-        <!-- </div>
-      </div> -->
-    
-
-	
-	<!-- <section id="home" class="main-banner parallaxie" style="background: url('uploads/profile.jpg')">
-        <br><br>
-      <div class="social-icons">
-        <i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"><a href="https://www.linkedin.com/in/rachel-oluoch/"></a></i>
-        &nbsp &nbsp
-        <i data-aos="zoom-out" class="fa-brands fa-github fa-beat"><a href="https://github.com/Reckie02"></a></i>
-         &nbsp &nbsp
-        <i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"><a href="https://twitter.com/OluochRecky"></a></i>
-      </div> -->
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
@@ -132,7 +85,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-	<br><br><br><br>
+	<br><br>
 
    <div class="row">
   <!-- About -->
@@ -146,7 +99,12 @@
 
    <div class=" col md-6">
     <img class="profile" src="images/about.jpg">
-   </div>   
+   </div>
+
+   </div>
+
+   <br><br>
+
 </div>
  <section class="section-3" id="Services">
     <h2>Services</h2>
@@ -311,6 +269,9 @@
   <!-- <div class="footer">
     <p>BY: oluoch recky | oluochrachel384@gmail.com</p>
   </div> -->
+
+  <script src="index.js"></script>
+
   <script>
     const menuBtn = document.querySelector('.menu-btn')
     const navLinks = document.querySelector('.nav-links')
@@ -324,5 +285,6 @@
 
   });
 </script>
+
 </body>
 </html>

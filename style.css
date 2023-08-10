@@ -8,12 +8,7 @@
 	
 }
 
-.navbar .active{
-	font-weight: bold;
-	font-size: 25px;
-	color: black;
-	
-}
+
 body , html{
 	
 	margin: 0 auto;
@@ -22,22 +17,38 @@ body , html{
 	scroll-behavior: ;
 	font-family:cartena ;
 	display: block;
-	border-width: 90%;
+	//isolation: isolate;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 	margin: 10px auto;
+	background: radial-gradient(circle, whitesmoke);
+	background-blend-mode: lighten;
 	
 }
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
 
 /*navbar*/
 .navbar {
 	width: 100wmin;
 	display: flex;
-   background-color: gray;
+   background-color: #8D6843;
    opacity: 0.6;
    justify-content: space-between;
   
  }
  .navbar .active{
- 	color: black !important;;
+ 	color: black !important;
+ 	font-weight: bold;
+	font-size: 25px;
+	color: black;
+	
  }
 
 .nav-links{
@@ -83,10 +94,11 @@ body , html{
 	text-align: center;
 	margin: 0 auto;
 	color: whitesmoke;
+	
 }
 
 .fa-brands{
-	font-size: 4vmin;
+	font-size: 2vmin;
 	color: whitesmoke;
 	display: flex;
 	align-items: right;
@@ -113,22 +125,46 @@ body , html{
 	display: none;
 }
 
-.carousel{
+.scroll{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
 	font-family: monospace;
 	font-size: 4vmin;
-	text-align: center;
-	transform: translate(-50% -50%);
+	
 } 
-.carousel a{
+.scroll a{
 	text-decoration: none;
 	color: whitesmoke;
 }
-.carousel-item .active {
-	color: whitesmoke;
-
+.scrolling-words{ 
+    height:3rem;
+    margin: auto;
+    overflow: hidden;
 }
-.carousel-item:hover{
-	cursor: pointer;
+  .scrolling-words ul{
+	margin: 0 0.625rem;
+    padding: 0;
+    animation: scrollUp 4s infinite;
+}
+  .scrolling-words li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    list-style: none;
+}
+
+//variables
+$item-count:4;
+
+@-webkit-keyframes scrollUp {
+    @for $i from 1 through ($item-count - 1)
+    {
+        #{($i*25) - 10%}, #{$i * 25%} {
+            transform:translateY((-100% / $item-count)* $i);
+        }
+    }
 }
 
 h2{
@@ -145,11 +181,9 @@ i {
 
 
 .profile{
-	max-width: 500px;
-	max-height: 500px;
-	align-self: center;
+	width: 500px;
+	height: 600px;
 }
-
 /*About*/
 .about{
 	width: 80%;
@@ -160,9 +194,13 @@ i {
 	font-size: 4vmin;
 	color: black;
 }
+
+.about h2{
+	color:#4D2B08 ;
+}
  
  .about p{
- 	color: gray;
+ 	color: black;
  	padding: 0px;
  	font-family: ;
  	font-size: 3vmin;
@@ -171,7 +209,7 @@ i {
  }
  
  .card{
- 	background-color: gray;
+ 	background-color: #4D2B08;
  	border-color: gray;
  	display: flex;
  	align-items: center;
@@ -181,11 +219,19 @@ i {
 
  }
 
+ .about a{
+ 	color:#F8DCBF ;
+ 	background-color: #4D2B08;
+ 	padding: 10px;
+ 	text-decoration:none ;
+ 	display: inline-block;
+ }
+
 /*services and projects*/
  .section-3{
- 	background-color: gray;
+ 	background-color: #8D6843;
  	padding-bottom: 50px;
-        color: black;
+    color: black;
 	text align:center;
 	justify-content: center;
 	display: flex;
@@ -194,9 +240,14 @@ i {
    justify-content: space-between;
  }
  .section-3 h1{
+ 	color: #4D2B08;
  	font-size: 7vmin;
  	text-align: center;
  	text-decoration: double underline;
+ }
+
+ .section-3 h2{
+ 	color: #4D2B08;
  }
 
  .section-3 p{
@@ -225,27 +276,22 @@ img:hover{
 .resume{
 	align-items:center;
 	text-align:center;
+
 }
 
 .resume li{
 	font color: black;
+
 	
 }
 
-.resume .resume-item::before {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: 30px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
-}
 
 .resume p{
 	font-size: 15px;
 	color: black;
+}
+.resume h2{
+	color: #4D2B08;
 }
 ul.timeline{
 	list-style-type: circle;
@@ -266,7 +312,7 @@ h6{
  	justify-content: center;
  	margin: 0 auto;
  	width: 80%;
- 	background-color:gray;
+ 	background-color:#8D6843;
  	backdrop-filter: shadow;
  	opacity: 0.2;
  	border-radius: 1%;
@@ -289,15 +335,15 @@ h6{
  }
  .contact .ctn{
  	width: 50%;
- 	background-color: dimgray;
+ 	background-color: #4D2B08;
  }
 
- .footer{
+ /*.footer{
  	background-color: gray;
  	height: 30px;
  	position: bottom;
  margin-bottom: 0px;
- }
+ }*/
 
 
 /*Mobile device*/
@@ -403,3 +449,8 @@ box-shadow:2px 2px 5px gray;
  	cursor: pointer;
  }
 }
+
+
+#F8DCBF
+#4D2B08
+#8D6843
