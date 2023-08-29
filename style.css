@@ -7,31 +7,26 @@
 	padding: 0;
 	
 }
+html{
+	scroll-behavior: smooth;
+}
 
-
-body , html{
+body{
 	
-	margin: 0 auto;
+	max-width: 1024px;
 	text-align:center;
 	justify-content:center;
-	scroll-behavior: ;
 	font-family:cartena ;
 	display: block;
 	//isolation: isolate;
     position: relative;
-    width: 100vw;
-    height: 100vh;
 	margin: 10px auto;
-	background: radial-gradient(circle, whitesmoke);
-	background-blend-mode: lighten;
 	
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-body {
-    margin: 0px;
-}
+
 
 
 /*navbar*/
@@ -96,15 +91,31 @@ body {
 	color: whitesmoke;
 	
 }
-
-.navbar .social-icons .fa-brands{
+.fa-brands{
 	font-size: 3vmin;
 	color: rgb(255, 255, 255);
 	display: flex;
-	flex-direction: row;
+	flex-wrap: nowraps;
 	
 }
 
+.footer-icons{
+	text-align: left;
+	box-sizing: border-box;
+	font-size: 10vmin;
+	text-decoration: none;
+	display: grid;
+	background-color: #4D2B08;
+	
+	
+}
+.footer-icons a {
+	margin-top: 3vmin;
+	margin: left;
+	font-size: 3vmin;
+	text-decoration: none;
+	color: rgb(146, 146, 146);
+}
  h1{
 	text-align: center;
   font-size: 7vmin;
@@ -227,8 +238,72 @@ i {
  	text-decoration:none ;
  	display: inline-block;
  }
+ /* ============================== SKILLS ======================================== */
+ .skills-container{
+	row-gap: 1.5rem;
+	display: flex;
 
-/*services and projects*/
+ }
+
+ .skill-title{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	column-gap: .5rem;
+	font-size: var(--small-font-size);
+	font-weight: var(--font-semi-bold);
+	margin-bottom: 2.5rem;
+ }
+
+ .skill-title i {
+font-size: 1rem;
+font-weight: initial;
+ }
+
+ .skill-info,
+ .skill-data,
+ .skill-blob {
+	display: grid;
+	
+ }
+ .skill-info{
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem 2rem;
+
+ }
+ .skill-data{
+	justify-content: center;
+	text-align: center;
+ }
+ .skill-blob{
+	width: 80px;
+	height: 100px;
+	background-color: var(--container-color);
+	border-radius: 3rem;
+	place-items: center;
+	margin-bottom: 1rem;
+ }
+ .skill-blob img{
+	width: 40px;
+ }
+ .skill-name{
+	font-size: var(--small-font-size);
+	margin-bottom: .25rem;
+ }
+ .skill-subtitle{
+	font-size: var(--tiny-font-size);
+	color: var(--text-color-light);
+ }.skill-blob:hover img{
+	animation: bounce-skills .6s;
+ }
+ @keyframes bounce-skills{
+	0%{
+		transform: tran
+	}
+ }
+
+
+/* =============================== services and projects========================== */
  .section-3{
  	background-color: #8D6843;
  	padding-bottom: 50px;
@@ -310,7 +385,7 @@ h6{
 /*contact form*/
 #footer-icons .fa-brands {
 	font-size: 3vmin;
-	display: block;
+	display: block 
 	text-decoration: none;
 }
 
