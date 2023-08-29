@@ -233,61 +233,40 @@
        
 </section>
     
-<br> <br>
-
-<!-- <?php
-  if( !empty($_POST["send"])){
-     $userName = $_POST["userName"]
-     $userEmail = $_POST["userEmail"]
-     $userPhone = $_POST["userPhone"]
-     $message = $_POST["message"]
-     $toEmail = $_POST["oluochrachel384@gmail.com"]
-
-     $mailHeaders ="Name: " . $userName . 
-     "\r\n Email: " . $userEmail .
-     "\r\n Phone: " . $userPhone .
-     "\r\n message: " . $message . "\r\n";
-     if(mail($toEmail, $userName, $mailHeaders)){
-      $message = " Your Information is Recieved Successfully"
-     }
-  }
-  ?> -->
-  <section data-aos="fade-right" class="contact"  id="Contact" >
-    <div class="form-container">
-    <form method="post" name="emailContact">
-    
-           <h2>Contact <br><br></h2>
-
-           <div class="input-row">
+<br> <br> 
+<div class="container border mt-3">
+  <div class="row">
+    <div class="col-md-6 mt-3" id="footer-icons">
+     <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i> Linkedin</a>
+        &nbsp &nbsp
+      <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i> Github</a>
+         &nbsp &nbsp
+      <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i> Twitter</a>
+  </div>
+  <div class="Contact  col-md-6 p-5 bg-brown">
+    <h2>Contact Me</h2>
+      <br> <br>
+       <div class="form-control" id="name">
           <input type="text" name="userName" placeholder="Name:" required>
         </div>
-<br>
 
-      <div class="input-row">  
-          <input type="telephone" name="userPhone" placeholder="Phone No:" required></div>
-<br>
+      <div class="form-control" id="Phonenumber">  
+          <input type="telephone" name="userPhone" placeholder="Phone No:" required>
+        </div>
 
-      <div class="input-row">
+      <div class="form-control" id="mail">
             <input type="email" name="userEmail" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" required>
       </div>
- <br>
         
-        <div class="input-row">
-             <textarea rows=8 cols=60 id="message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
+        <div class="form-control" id="message">
+             <textarea rows=3 id="message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
       </div>
-   
-
-      <div class="input-row">
+  
+      
          <button type="submit" class="ctn rounded">Send</button>
-         <?php if (!empty(message)){?>
-         <div class="sent">
-           <strong><php echo $message;?></strong>
-         </div>
-         <?php }?> 
-      </div>
-    </div>
-    </form>
-  </section>
+         
+  </div>
+  </div>
   <br>
   <!-- <div class="footer">
     <p>BY: oluoch recky | oluochrachel384@gmail.com</p>

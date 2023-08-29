@@ -11,8 +11,8 @@ const texts = [
     "3D Design"
 ];
 
-const morphTime = 2;
-const cooldownTime = 0.5;
+const morphTime = 1;
+const cooldownTime = 0.1;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -48,7 +48,7 @@ function setMorph(fraction) {
     elts.text2.textContent = texts[(textIndex + 1) % texts.length];
 }
 
-function doCooldown() {
+function docooldown() {
     morph = 0;
 
     elts.text2.style.filter = "";
@@ -75,7 +75,7 @@ function animate() {
 
         doMorph();
     } else {
-        doCooldown();
+        docooldown();
     }
 }
 

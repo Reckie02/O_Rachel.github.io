@@ -97,11 +97,12 @@ body {
 	
 }
 
-.fa-brands{
-	font-size: 2vmin;
-	color: whitesmoke;
+.navbar .social-icons .fa-brands{
+	font-size: 3vmin;
+	color: rgb(255, 255, 255);
 	display: flex;
-	align-items: right;
+	flex-direction: row;
+	
 }
 
  h1{
@@ -145,7 +146,7 @@ body {
   .scrolling-words ul{
 	margin: 0 0.625rem;
     padding: 0;
-    animation: scrollUp 4s infinite;
+    animation: scrollUp 10s infinite;
 }
   .scrolling-words li{
     display: flex;
@@ -155,17 +156,17 @@ body {
     list-style: none;
 }
 
-//variables
+/* //variables
 $item-count:4;
 
-@-webkit-keyframes scrollUp {
+@-webkit-keyframes scrolldown {
     @for $i from 1 through ($item-count - 1)
     {
-        #{($i*25) - 10%}, #{$i * 25%} {
-            transform:translateY((-100% / $item-count)* $i);
+        #{($i*5) - 2%}, #{$i * 5%} {
+
         }
     }
-}
+} */
 
 h2{
 	font-size: 50px;
@@ -306,44 +307,20 @@ h6{
 }
 
 
-/* contact */
- .contact{
- 	display: flex;
- 	justify-content: center;
- 	margin: 0 auto;
- 	width: 80%;
- 	background-color:#8D6843;
- 	backdrop-filter: shadow;
- 	opacity: 0.2;
- 	border-radius: 1%;
- 
- }
- .contact{
- 	width: 70%;
- 	display: flex;
- 	margin: 0 auto;
- 	
- }
- .contact input{
- 	border-width:50% ;
- 	content-visibility: auto;
- 	background-color:whitesmoke;
- 	color: black;
- }
-#contact-message{
- 	width: 150wmin;
- }
- .contact .ctn{
- 	width: 50%;
- 	background-color: #4D2B08;
- }
+/*contact form*/
+#footer-icons .fa-brands {
+	font-size: 3vmin;
+	display: block;
+	text-decoration: none;
+}
 
- /*.footer{
+
+ /* .footer{
  	background-color: gray;
  	height: 30px;
  	position: bottom;
  margin-bottom: 0px;
- }*/
+ } */
 
 
 /*Mobile device*/
@@ -419,7 +396,6 @@ img:hover{
 /*contact*/
 .contact{
 	justify-content: center;
-	display: grid;
 	align-items: center;
 	text-align:center;
 	padding: 20% auto;
