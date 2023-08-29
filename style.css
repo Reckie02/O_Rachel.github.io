@@ -27,8 +27,6 @@ body{
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
 
-
-
 /*navbar*/
 .navbar {
 	width: 100wmin;
@@ -180,11 +178,16 @@ $item-count:4;
 } */
 
 h2{
-	font-size: 50px;
+	font-size: 8vmin;
 	text-decoration: double underline;
+	font-weight: bold;
+	text-align: center;
+	color:#4D2B08
 }
-h3{
-	font-size: 40px;
+h3 {
+	font-size: 6vmin;
+	text-align: center;
+text-align: nowrap;
 }
 
 i {
@@ -205,10 +208,6 @@ i {
 	text-align: center;
 	font-size: 4vmin;
 	color: black;
-}
-
-.about h2{
-	color:#4D2B08 ;
 }
  
  .about p{
@@ -250,13 +249,10 @@ i {
 	justify-content: center;
 	align-items: center; 
 	column-gap: .5rem;
-	font-size: var(--small-font-size);
-	font-weight: var(--font-semi-bold);
 	margin-bottom: 2.5rem;
  }
 
  .skill-title i {
-font-size: 1rem;
 font-weight: initial;
  }
 
