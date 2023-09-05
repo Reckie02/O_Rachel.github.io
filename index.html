@@ -30,36 +30,51 @@
 
 <body>
   
-  <div class="header-content" id="header-content">
+  <section class="header-content" id="header-content">
 
   <!-- navbar -->
-  <nav class="navbar fixed-top">
+  <nav class="navbar">
+    <div class="logo">O.R.R</div>
     <!-- <a class="navbar-brand js-scroll-trigger" href="#header-content">O.R.R</a> -->
-    <div class="nav-links">
-      <div class="active"><a href="#header-content">Home</a></div>
-      <a href="#About">About</a>
+    <div class=" nav-links">
+      <div>
+      <a href="#header-content">Home</a>
       <a href="#Services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#Resume">Resume</a>
       <a href="#Contact">contacts</a>
-    </div>
-
+      </div>
+      <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
+  </nav>
+  </section>
+<br>
+  <div class="home">
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i></a>
+      <a class="icon" href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i></a>
         &nbsp &nbsp
-      <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i></a>
+      <a  class="icon" href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i></a>
          &nbsp &nbsp
-      <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i></a>
+      <a class="icon" href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i></a>
     </div>
-
-	  <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
-   </nav>
-
-   <div>
+      <div class="profile-img">
+        <img class="profile" src="images/about.jpg">
+        </div>
+      <div class="home-text">
     <h1>Oluoch Recky Rachel</h1>
-      <p>IT Services</p>
+      <p style="color: #F8DCBF;">IT Services</p>
+      <br>
+     <div class="about">
+        <p > Hi I am Oluoch Recky Rachel, front-end Developer based in Mombasa Kenya. <br>
+          Currently persuing a degree in Information Technology at the University of Mombasa.  
+    </p>
+    </div>
+    <br>
+      <a class="cv-btn" href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
+    </div>  
+  </div>
+
      <div class="scroll" id="animation">
-       <div class="scrolling-words">
+       <div class="scrolling-words" style="color: #F8DCBF;">
            <span id="service 1"></span>
            <span id="service 2"></span>
        </div>
@@ -76,38 +91,26 @@
 </svg>
    </div>
   </div>
-
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-	<br><br>
-
-   <div class="row">
-  <!-- About -->
-  <div class="about col md-6" id="About"> 
-      <h2>About</h2>
-      <p> I am Oluoch Recky Rachel From Mombasa Kenya. I am currently A Student Persuing a degree in Bachelor of science in Information Technology at The Technical University Of Mombasa.
-    I also do digital marketing and website development.</p>
-
-    <a href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-  </div>
-
-   <div class=" col md-6">
-    <img class="profile" src="images/about.jpg">
-   </div>
-
-   </div>
-
-   <br><br>
+  </section>
+<!-- ============================ About ======================================= -->
+<!-- <section class="about"> 
+      <h2 class="about title">About</h2>
+<div class="row">
+  <div class="col-md-6">
+      <p > Hi I am Oluoch Recky Rachel, front-end Developer based in Mombasa Kenya. <br>
+        Currently persuing a degree in Information Technology at the University of Mombasa.  
+      <br><br> <br><br>
+      <a class="cv-btn" href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
+    </p>
+    </div>
+<br>
+      <img class="profile" src="images/about.jpg">
+<br>      
+</div>
+   </section> -->
 
 <!--============================== SKILLS ========================================-->
-   <section class="skills section" id="skills">
+   <!-- <section class="skills section" id="skills">
     <h2 class="section-title">Skills</h2>
      <span class="section-subtitle">My favourite skills</span>
      <div class="skills-container section-border">
@@ -123,14 +126,7 @@
             <h4 class="skill-name"> HTML</h4>
             <span class="skill-subtitle">Intermediate</span>
           </div>
-        </div>
-      </div>
 
-      <div class="skills-content">
-        <h3 class="skill-title">
-
-        </h3>
-        <div class="skill-info">
           <div class="skill-data">
             <div class="skill-blob">
               <img src="images/css-3.svg" alt="skill icon">
@@ -138,13 +134,7 @@
             <h4 class="skill-name">CSS</h4>
             <span class="skill-subtitle">Advanced</span>
           </div>
-        </div>
-      </div>
-      <div class="skills-content">
-        <h3 class="skill-title">
-
-        </h3>
-        <div class="skill-info">
+        
           <div class="skill-data">
             <div class="skill-blob">
               <img src="images/javascript.svg" alt="skill icon">
@@ -153,7 +143,7 @@
             <span class="skill-subtitle">Intermediate</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <div class="skills-content">
         <h3 class="skill-title">
@@ -202,11 +192,11 @@
 
    </section>
 
- <section class="section-3" id="Services">
-    <h2>Services</h2>
+ <section class="services" id="Services">
+    <h2 class="section-tittle">Services</h2>
   <div class="container-fluid mt-3" >
   <div class="row">
-    <div data-aos="fade-right" class="col p-3">
+   <div data-aos="fade-right" class="col p-3">
       <div class="card">
       <h3>Digital Marketing</h3>
       <br>
@@ -232,10 +222,11 @@
   </div>
   </div>
 </div>
+</section>
 
 <br>
 
-
+<section class="projects">
      <h2 id="projects">Projects</h2>
   
   <div class="container-fluid mt-3">
@@ -272,79 +263,78 @@
 
 <!-- resume -->
 <section class="resume"  id="Resume">
+  <div class="resume-content">
+        <div class="resume-tittle">
           <h2>Resume</h2>
-        
+        </div>
+        <div class="resume-profile">
             <div data-aos="fade-down" class="resume-item">
               <h3>Recky Oluoch</h3>
                
                 <h6>Mombasa, Kenya<br>
                 +254 742381294<br>
                 oluochrachel384@gmail.com</h6>
-              
-            </div>
-          
-          <div class="row">
-            
-            <h3 class="resume-title">Education</h3>
+            </div>  
+        </div>
+            <div class="education">
+            <h3>Education</h3>
             <div class="col-lg-8 mx-auto">
               <!-- timeline -->
               <ul class="timeline">
-
-                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-            <div data-aos="fade-right" class="resume-item">
-              <h4>Bachelor of Science in Information Technology</h4>
-              <h5>Presently - 2023</h5>
-              <h6><em>Technical University of Mombasa</em></h6>
-            </div>
-          </li>
+                <li class="timeline-item rounded ml-3 p-4 shadow">
+                 <div data-aos="fade-right" class="resume-item">
+                   <h4>Bachelor of Science in Information Technology</h4>
+                   <h5>Presently - 2023</h5>
+                   <h6><em>Technical University of Mombasa</em></h6>
+                 </div>
+                </li>
               
-              <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-          <div  data-aos="fade-left" class="resume-item">
-              <h4>Website Development, 3D Printing, Digital Marketing</h4>
-              <h5>Presently - 2023</h5>
-              <h6><em>Pwaniteknowgalz</em></h6>
-            </div>
-              </li>
+                <li class="timeline-item rounded ml-3 p-4 shadow">
+                  <div  data-aos="fade-left" class="resume-item">
+                    <h4>Website Development, 3D Printing, Digital Marketing</h4>
+                    <h5>Presently - 2023</h5>
+                    <h6><em>Pwaniteknowgalz</em></h6>
+                  </div>
+                </li>
 
-               <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-          <div  data-aos="fade-left" class="resume-item">
-              <h4>Digital Marketing</h4>
-              <h5>Jan - May (2023)</h5>
-              <h6><em>Aleph Digital AD School</em></h6>
-            </div>
-              </li>
+                <li class="timeline-item rounded ml-3 p-4 shadow">
+                  <div  data-aos="fade-left" class="resume-item">
+                    <h4>Digital Marketing</h4>
+                    <h5>Jan - May (2023)</h5>
+                    <h6><em>Aleph Digital AD School</em></h6>
+                  </div>
+                </li>
                
-              <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-          <div  data-aos="fade-left" class="resume-item">
-              <h4>High-School</h4>
-              <h5>  Jan 2016 - April 2021</h5>
-              <p>Completed with an A and A- in Computer Studies and Geography respectively and a mean grade of B-</p>
-              <h6><em>Ng'iya Girls HighSchool</em></h6>
-            </div>
-             </li> 
-            </div>
-          </ul>
-          </div>
+                <li class="timeline-item rounded ml-3 p-4 shadow">
+                  <div  data-aos="fade-left" class="resume-item">
+                   <h4>High-School</h4>
+                   <h5>  Jan 2016 - April 2021</h5>
+                   <p>Completed with an A and A- in Computer Studies and Geography respectively and a mean grade of B-</p>
+                   <h6><em>Ng'iya Girls HighSchool</em></h6>
+                  </div>
+                </li> 
+              </ul>
         </div>
-       
+  </div>
 </section>
     
-<br> <br> 
-<div class="container border mt-3">
-  <div class="row">
-    <div class="col-md-6 bg-brown footer-icons">
-
-      <a href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i> Linkedin</a>
+<br> <br>
+<div class="footer">
+    <div class="social-links">
+         <a  href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i>&nbsp &nbsp Linkedin</a>
+      <br><br>
+         <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i>&nbsp &nbsp Github</a>
+      <br><br>
+         <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i>&nbsp &nbsp Twitter</a>
+    </div>
   
-      <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i> Github</a>
-   
-      <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i> Twitter</a>
-      
-  </div>
-  <div class="Contact  col-md-6 p-5 bg-brown">
-    <h2>Contact Me</h2>
-      <br> <br>
-       <div class="form-control" id="name">
+      <div class=" contact-form">
+        <form action="">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+        </div>
+                  <br> <br>
+        <div class="form-control" id="name">
           <input type="text" name="userName" placeholder="Name:" required>
         </div>
 
@@ -362,13 +352,10 @@
   
       
          <button type="submit" class="ctn rounded">Send</button>
+         </form>
          
-  </div>
-  </div>
-  <br>
-  <!-- <div class="footer">
-    <p>BY: oluoch recky | oluochrachel384@gmail.com</p>
-  </div> -->
+     </div>
+    </div>
 
   <script src="index.js"></script>
 

@@ -11,8 +11,8 @@ const texts = [
     "3D Design"
 ];
 
-const morphTime = 1;
-const cooldownTime = 0.1;
+const morphTime = 2;
+const cooldownTime = 0.02;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -63,7 +63,7 @@ function animate() {
 
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
-    let dt = (newTime - time) / 1000;
+    let dt = (newTime - time) / 995;
     time = newTime;
 
     cooldown -= dt;
