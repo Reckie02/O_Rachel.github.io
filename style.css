@@ -438,6 +438,21 @@ h6{
 }
 
 /*================================== contact section ================================*/
+.contact-form{
+	display: block;
+}
+
+.form{
+	display: block;
+}
+
+input{
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	align-items: center;
+}
+
 
 
 
