@@ -328,30 +328,48 @@
          <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i>&nbsp &nbsp Twitter</a>
     </div>
   
-      <div class=" contact-form">
-        <form action="">
+     <div class=" contact-form">
         <div class="section-title">
           <h2>Contact Me</h2>
         </div>
                   <br> <br>
-        <div class="form-control" id="name">
-          <input type="text" name="userName" placeholder="Name:" required>
-        </div>
+          <form action="post" class="form">
+          <input type="text" id="name" placeholder="Name:" required autocomplete="off">
+ 
+          <input type="text" id="subject" placeholder="subject" required  autocomplete="off">
 
-      <div class="form-control" id="Phonenumber">  
-          <input type="telephone" name="userPhone" placeholder="Phone No:" required>
-        </div>
+          <input type="email" id="email" id="contact-email" placeholder="E-mail:"required autocomplete="off">
 
-      <div class="form-control" id="mail">
-            <input type="email" name="userEmail" id="contact-email" placeholder="E-mail:" pattern="[^ @]*@[^ @]*" required>
-      </div>
-        
-        <div class="form-control" id="message">
-             <textarea rows=3 id="message" placeholder="Message:" name="contact-message" placeholder="Your Message"></textarea>
-      </div>
-  
-      
-         <button type="submit" class="ctn rounded">Send</button>
+          <textarea id="message" placeholder="Message:" placeholder="Your Message" cols="50" rows="5"></textarea>
+  <br>
+          <button id="btn" type="submit" class="ctn rounded">Send</button>
+         </form>
+
+         <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+         <script>
+          var btn = document.getElementById('btn');
+          btn.addEventListener('click' ,function(e){
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var subject = document.getElementById('subject').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var body = 'name:' +name +'<br/> email:' +email +'<br/> subject:' +subject +'<br/> message:' +message;
+            
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "oluochrachel384@gmail.com",
+    Password : "rtlzbdgnlgojdyss",
+    To : 'oluochrachel384@gmail.com',
+    From : email,
+    Subject : subject,
+    Body :  body
+}).then(
+  message => alert(message)
+);
+          })
+         </script>
          </form>
          
      </div>
