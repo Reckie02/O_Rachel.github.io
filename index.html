@@ -2,395 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" href="index.js"></script>
-
-  <title> O_Rachel</title>
-
-
-  <!-- css  -->
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
-
-<!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-  <!-- Animate on Scoll -->
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
- 
- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>O_Rachel</title>
 </head>
 
 <body>
   
+  <!-- Header Content Section -->
   <section class="header-content" id="header-content">
 
-  <!-- navbar -->
-  <nav class="navbar">
-    <div class="logo">O.R.R</div>
-    <!-- <a class="navbar-brand js-scroll-trigger" href="#header-content">O.R.R</a> -->
-    <div class=" nav-links">
-      <div>
-      <a href="#header-content">Home</a>
-      <a href="#Services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#Resume">Resume</a>
-      <a href="#Contact">contacts</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#header-content">O.R.R</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#header-content">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contact">Contacts</a></li>
+          </ul>
+        </div>
       </div>
-      <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
-  </nav>
-  </section>
-<br>
-  <div class="home">
-    <div class="social-icons">
-      <a class="icon" href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i></a>
-        &nbsp &nbsp
-      <a  class="icon" href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i></a>
-         &nbsp &nbsp
-      <a class="icon" href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i></a>
-    </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="home text-center mt-5">
+      <div class="social-icons">
+        <a class="icon" href="https://www.linkedin.com/in/rachel-oluoch/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-beat" data-aos="zoom-out"></i></a>
+        <a class="icon" href="https://github.com/Reckie02" aria-label="GitHub"><i class="fa-brands fa-github fa-beat" data-aos="zoom-out"></i></a>
+        <a class="icon" href="https://twitter.com/OluochRecky" aria-label="Twitter"><i class="fa-brands fa-twitter fa-beat" data-aos="zoom-out"></i></a>
+      </div>
       <div class="profile-img">
-        <img class="profile" src="images/about.jpg">
-        </div>
+        <img class="profile" src="images/about.jpg" alt="Profile Image">
+      </div>
       <div class="home-text">
-    <h1>Oluoch Recky Rachel</h1>
-      <p style="color: #F8DCBF;">IT Services</p>
-      <br>
-     <div class="about">
-        <p > Hi I am Oluoch Recky Rachel, front-end Developer based in Mombasa Kenya. <br>
-          Currently persuing a degree in Information Technology at the University of Mombasa.  
-    </p>
+        <h1>Oluoch Recky Rachel</h1>
+        <p class="text-muted">IT Services</p>
+        <div class="about">
+          <p>Hi, I am Oluoch Recky Rachel, a front-end developer based in Mombasa, Kenya. <br>
+          Currently pursuing a degree in Information Technology at the Technical University of Mombasa.</p>
+        </div>
+        <a class="btn btn-primary cv-btn" href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" target="_blank">Download CV</a>
+      </div>  
     </div>
-    <br>
-      <a class="cv-btn" href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-    </div>  
-  </div>
 
-     <div class="scroll" id="animation">
-       <div class="scrolling-words" style="color: #F8DCBF;">
-           <span id="service 1"></span>
-           <span id="service 2"></span>
-       </div>
-     </div>
-     <svg id="filters">
-    <defs>
-        <filter id="threshold">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                  0 1 0 0 0
-                  0 0 1 0 0
-                  0 0 0 255 -140" />
-        </filter>
-    </defs>
-</svg>
-   </div>
-  </div>
   </section>
-<!-- ============================ About ======================================= -->
-<!-- <section class="about"> 
-      <h2 class="about title">About</h2>
-<div class="row">
-  <div class="col-md-6">
-      <p > Hi I am Oluoch Recky Rachel, front-end Developer based in Mombasa Kenya. <br>
-        Currently persuing a degree in Information Technology at the University of Mombasa.  
-      <br><br> <br><br>
-      <a class="cv-btn" href="https://docs.google.com/document/d/1a6VUhg8wSQmEMFly0zgtqyZxtAsj26Cf/edit?usp=drivesdk&ouid=106411426925370599379&rtpof=true&sd=true" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-    </p>
-    </div>
-<br>
-      <img class="profile" src="images/about.jpg">
-<br>      
-</div>
-   </section> -->
 
-<!--============================== SKILLS ========================================-->
-   <!-- <section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-     <span class="section-subtitle">My favourite skills</span>
-     <div class="skills-container section-border">
-      <div class="skills-content">
-        <h3 class="skill-title">
-<i class="ri-braces-line">Front-end Developer</i>
-        </h3>
-        <div class="skill-info">
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="images/html5-2.svg" alt="skill icon">
-            </div>
-            <h4 class="skill-name"> HTML</h4>
-            <span class="skill-subtitle">Intermediate</span>
-          </div>
-
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="images/css-3.svg" alt="skill icon">
-            </div>
-            <h4 class="skill-name">CSS</h4>
-            <span class="skill-subtitle">Advanced</span>
-          </div>
-        
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="images/javascript.svg" alt="skill icon">
-            </div>
-            <h3 class="skill-name">Javascript</h3>
-            <span class="skill-subtitle">Intermediate</span>
+  <!-- Services Section -->
+  <section class="services mt-5" id="Services">
+    <h2 class="section-title text-center">Services</h2>
+    <div class="container mt-3">
+      <div class="row">
+        <div data-aos="fade-right" class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>Digital Marketing</h3>
+            <img src="images/dgm.jpg" alt="Digital Marketing" class="img-fluid">
           </div>
         </div>
-      </div> -->
-
-      <!-- <div class="skills-content">
-        <h3 class="skill-title">
-<i class="ri-braces-line">Web Designer</i>
-        </h3>
-        <div class="skill-info">
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="" alt="skill icon">
-            </div>
-            <h3 class="skill-name"> Invision App</h3>
-            <span class="skill-subtitle">Intermediate</span>
+        <div data-aos="fade-down" class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>Website Development</h3>
+            <img src="images/website.jpg" alt="Website Development" class="img-fluid">
+          </div>
+        </div>
+        <div data-aos="fade-left" class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>3D Printing</h3>
+            <img src="images/3d.jpg" alt="3D Printing" class="img-fluid">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="skills-content">
-        <h3 class="skill-title">
-
-        </h3>
-        <div class="skill-info">
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="" alt="skill icon">
-            </div>
-            <h3 class="skill-name">Adobe</h3>
-            <span class="skill-subtitle">Advanced</span>
+  <!-- Projects Section -->
+  <section class="projects mt-5" id="projects">
+    <h2 class="text-center">Projects</h2>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>Shareiki</h3>
+            <a href="https://reckie02.github.io/Shareiki.github.io/" target="_blank"><img src="images/shareiki.png" alt="Shareiki Project" class="img-fluid"></a>
+            <p>A charity organization website.</p>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>Sheblog's</h3>
+            <a href="https://reckie02.github.io/blog/" target="_blank"><img src="images/sheblog's.png" alt="Sheblog's Project" class="img-fluid"></a>
+            <p>A lifestyle blog website.</p>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card text-center">
+            <h3>Project 3</h3>
+            <a href="images/vacation.png"><img src="images/vacation.png" alt="Vacation Poster" class="img-fluid"></a>
+            <p>Digital Marketing poster</p>
           </div>
         </div>
       </div>
-      <div class="skills-content">
-        <h3 class="skill-title">
+    </div>
+  </section>
 
-        </h3>
-        <div class="skill-info">
-          <div class="skill-data">
-            <div class="skill-blob">
-              <img src="" alt="skill icon">
-            </div>
-            <h3 class="skill-name"> Photoshop</h3>
-            <span class="skill-subtitle">Intermediate</span>
-          </div>
+  <!-- Resume Section -->
+  <section class="resume mt-5" id="Resume">
+    <div class="container">
+      <h2 class="text-center">Resume</h2>
+      <div class="resume-content">
+        <div data-aos="fade-down" class="resume-item">
+          <h3>Recky Oluoch</h3>
+          <p>Mombasa, Kenya<br>+254 742381294<br>oluochrachel384@gmail.com</p>
         </div>
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li data-aos="fade-right" class="timeline-item">
+            <h4>Bachelor of Science in Information Technology</h4>
+            <h5>2023 - Present</h5>
+            <p><em>Technical University of Mombasa</em></p>
+          </li>
+          <li data-aos="fade-left" class="timeline-item">
+            <h4>Website Development, 3D Printing, Digital Marketing</h4>
+            <h5>2023 - Present</h5>
+            <p><em>Pwaniteknowgalz</em></p>
+          </li>
+          <li data-aos="fade-left" class="timeline-item">
+            <h4>Digital Marketing</h4>
+            <h5>Jan - May 2023</h5>
+            <p><em>Aleph Digital AD School</em></p>
+          </li>
+          <li data-aos="fade-left" class="timeline-item">
+            <h4>High-School</h4>
+            <h5>Jan 2016 - Apr 2021</h5>
+            <p>Completed with an A in Computer Studies and a mean grade of B- at Ng'iya Girls High School</p>
+          </li>
+        </ul>
       </div>
-     </div> -->
-
-   </section>
-
- <section class="services" id="Services">
-    <h2 class="section-tittle">Services</h2>
-  <div class="container-fluid mt-3" >
-  <div class="row">
-   <div data-aos="fade-right" class="col p-3">
-      <div class="card">
-      <h3>Digital Marketing</h3>
-      <br>
-           <img src="images/dgm.jpg">
-          <p> </p>
     </div>
-  </div>
-    <div data-aos="fade-down" class="col p-3" >
-      <div class="card">
-      <h3>Website Development</h3>
-      <br>
-          <img src="images/website.jpg">
-          <p> </p>
-      </div> 
-    </div>
-    <div data-aos="fade-left" class="col p-3">
-      <div class="card">
-      <h3>3D Printing</h3>
-      <br>
-          <img src="images/3d.jpg">
-          <p> </p> 
-    </div>
-  </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<br>
-
-<section class="projects">
-     <h2 id="projects">Projects</h2>
-  
-  <div class="container-fluid mt-3">
-  <div class="row">
-    <div class="col p-3 ">
-      <div class="card">
-      <h3>Shareiki</h3>
-          <a href="https://reckie02.github.io/Shareiki.github.io/"> <img src="images/shareiki.png"></a>
-          <br>
-          <p>A charity organization website </p>
+  <!-- Footer with Contact Form -->
+  <footer class="footer mt-5">
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/rachel-oluoch/" target="_blank" class="d-block"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+      <a href="https://twitter.com/OluochRecky" target="_blank"><i class="fa-brands fa-twitter fa-beat"></i></a>
+      <a href="https://github.com/Reckie02" target="_blank"><i class="fa-brands fa-github fa-beat"></i></a>
     </div>
-  </div>
-
-    <div class="col p-3 ">
-      <div class="card">
-      <h3>Sheblog's</h3>
-          <a href="https://reckie02.github.io/blog/"><img src="images/sheblog's.png"></a>
-          <br>
-          <p>A lifestyle blog website. </p> 
-    </div>
-  </div>
-    <div class="col p-3 ">
-      <div class="card">
-      <h3>Project 3</h3>
-          <a href="images/vacation.png"> <img src="images/vacation.png"></a>
-          <br>
-          <p>Digital Marketing poster</p> 
-    </div>
-  </div>
-  </div>
-</div>
-</section>
-<br>
-
-<!-- resume -->
-<section class="resume"  id="Resume">
-  <div class="resume-content">
-        <div class="resume-tittle">
-          <h2>Resume</h2>
+    <div class="container">
+      <h2 class="section-title text-center mt-5">Get in Touch</h2>
+      <form id="contact-form" action="https://formsubmit.co/oluochrachel384@gmail.com" method="POST">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Full Name" required autocomplete="off">
         </div>
-        <div class="resume-profile">
-            <div data-aos="fade-down" class="resume-item">
-              <h3>Recky Oluoch</h3>
-               
-                <h6>Mombasa, Kenya<br>
-                +254 742381294<br>
-                oluochrachel384@gmail.com</h6>
-            </div>  
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="off">
         </div>
-            <div class="education">
-            <h3>Education</h3>
-            <div class="col-lg-8 mx-auto">
-              <!-- timeline -->
-              <ul class="timeline">
-                <li class="timeline-item rounded ml-3 p-4 shadow">
-                 <div data-aos="fade-right" class="resume-item">
-                   <h4>Bachelor of Science in Information Technology</h4>
-                   <h5>Presently - 2023</h5>
-                   <h6><em>Technical University of Mombasa</em></h6>
-                 </div>
-                </li>
-              
-                <li class="timeline-item rounded ml-3 p-4 shadow">
-                  <div  data-aos="fade-left" class="resume-item">
-                    <h4>Website Development, 3D Printing, Digital Marketing</h4>
-                    <h5>Presently - 2023</h5>
-                    <h6><em>Pwaniteknowgalz</em></h6>
-                  </div>
-                </li>
-
-                <li class="timeline-item rounded ml-3 p-4 shadow">
-                  <div  data-aos="fade-left" class="resume-item">
-                    <h4>Digital Marketing</h4>
-                    <h5>Jan - May (2023)</h5>
-                    <h6><em>Aleph Digital AD School</em></h6>
-                  </div>
-                </li>
-               
-                <li class="timeline-item rounded ml-3 p-4 shadow">
-                  <div  data-aos="fade-left" class="resume-item">
-                   <h4>High-School</h4>
-                   <h5>  Jan 2016 - April 2021</h5>
-                   <p>Completed with an A and A- in Computer Studies and Geography respectively and a mean grade of B-</p>
-                   <h6><em>Ng'iya Girls HighSchool</em></h6>
-                  </div>
-                </li> 
-              </ul>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
         </div>
-  </div>
-</section>
-    
-<br> <br>
-<div class="footer">
-    <div class="social-links">
-         <a  href="https://www.linkedin.com/in/rachel-oluoch/"><i data-aos="zoom-out" class="fa-brands fa-linkedin fa-beat"></i>&nbsp &nbsp Linkedin</a>
-      <br><br>
-         <a href="https://github.com/Reckie02"><i data-aos="zoom-out" class="fa-brands fa-github fa-beat"></i>&nbsp &nbsp Github</a>
-      <br><br>
-         <a href="https://twitter.com/OluochRecky"><i data-aos="zoom-out" class="fa-brands fa-twitter fa-beat"></i>&nbsp &nbsp Twitter</a>
-      <span style="color: #F8DCBF; padding-bottom: 10%; "> oluochrachel384@gmail.com </span>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
-  
-     <div class=" contact-form">
-        <div class="section-title">
-          <h2>Contact Me</h2>
-        </div>
-                  <br> <br>
-          <form action="post" class="form">
-          <input type="text" id="name" placeholder="Name:" required autocomplete="off">
- 
-          <input type="text" id="subject" placeholder="subject" required  autocomplete="off">
+  </footer>
 
-          <input type="email" id="email" id="contact-email" placeholder="E-mail:"required autocomplete="off">
+  <!-- Bootstrap and AOS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
-          <textarea id="message" placeholder="Message:" placeholder="Your Message" cols="50" rows="5"></textarea>
-  <br>
-          <button id="btn" type="submit" class="ctn rounded">Send</button>
-         </form>
-
-         <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-         <script>
-          var btn = document.getElementById('btn');
-          btn.addEventListener('click' ,function(e){
-            e.preventDefault()
-            var name = document.getElementById('name').value;
-            var subject = document.getElementById('subject').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            var body = 'name:' +name +'<br/> email:' +email +'<br/> subject:' +subject +'<br/> message:' +message;
-            
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "oluochrachel384@gmail.com",
-    Password : "rtlzbdgnlgojdyss",
-    To : 'oluochrachel384@gmail.com',
-    From : email,
-    Subject : subject,
-    Body :  body
-}).then(
-  message => alert(message)
-);
-          })
-         </script>
-         </form>
-         
-     </div>
-    </div>
-
+  <!-- Custom JavaScript -->
   <script src="index.js"></script>
-
-  <script>
-    const menuBtn = document.querySelector('.menu-btn')
-    const navLinks = document.querySelector('.nav-links')
-
-
-    menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('mobile-menu')})
- </script>
- <script>
-  AOS.init({
-    duration: 1800
-
-  });
-</script>
 
 </body>
 </html>
